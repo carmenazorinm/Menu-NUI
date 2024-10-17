@@ -1,0 +1,910 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.50f1 (c3db7f8bf9b1) revision 12835711'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 7973 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/carmen/OneDrive/Escritorio/Menu-NUI/Menu-NUI
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50595
+Successfully changed project path to: C:/Users/carmen/OneDrive/Escritorio/Menu-NUI/Menu-NUI
+C:/Users/carmen/OneDrive/Escritorio/Menu-NUI/Menu-NUI
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1816]  Target information:
+
+Player connection [1816]  * "[IP] 192.168.56.10 [Port] 0 [Flags] 2 [Guid] 2205612561 [EditorId] 2205612561 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A4TV5SO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [1816]  * "[IP] 172.17.50.85 [Port] 0 [Flags] 2 [Guid] 2205612561 [EditorId] 2205612561 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A4TV5SO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [1816] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1816] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Multiple plugins with the same name 'leapcsharp' (found at 'Assets/Plugins/x86_64/LeapCSharp.dll' and 'Assets/Plugins/x86/LeapCSharp.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+Multiple plugins with the same name 'leap' (found at 'Assets/Plugins/x86/Leap.dll' and 'Assets/Plugins/x86_64/Leap.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+Refreshing native plugins compatible for Editor in 482.54 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.50f1 (c3db7f8bf9b1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/carmen/OneDrive/Escritorio/Menu-NUI/Menu-NUI/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 with Max-Q Design (ID=0x1c91)
+    Vendor:   NVIDIA
+    VRAM:     2981 MB
+    Driver:   32.0.15.5613
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.036942 seconds.
+- Loaded All Assemblies, in  1.616 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.944 seconds
+Domain Reload Profiling: 2556ms
+	BeginReloadAssembly (623ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (133ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (220ms)
+	LoadAllAssembliesAndSetupDomain (598ms)
+		LoadAssemblies (614ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (591ms)
+			TypeCache.Refresh (589ms)
+				TypeCache.ScanAssembly (550ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (945ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (779ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (18ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (543ms)
+			ProcessInitializeOnLoadMethodAttributes (173ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 16.204 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.633 seconds
+Domain Reload Profiling: 22830ms
+	BeginReloadAssembly (482ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (109ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (137ms)
+	LoadAllAssembliesAndSetupDomain (15432ms)
+		LoadAssemblies (14329ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1398ms)
+			TypeCache.Refresh (1251ms)
+				TypeCache.ScanAssembly (1161ms)
+			ScanForSourceGeneratedMonoScriptInfo (103ms)
+			ResolveRequiredComponents (39ms)
+	FinalizeReload (6635ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5362ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (77ms)
+			SetLoadedEditorAssemblies (22ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (872ms)
+			ProcessInitializeOnLoadAttributes (4291ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (30ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.28 seconds
+Multiple plugins with the same name 'leapcsharp' (found at 'Assets/Plugins/x86_64/LeapCSharp.dll' and 'Assets/Plugins/x86/LeapCSharp.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+Multiple plugins with the same name 'leap' (found at 'Assets/Plugins/x86/Leap.dll' and 'Assets/Plugins/x86_64/Leap.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+Refreshing native plugins compatible for Editor in 160.22 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3237 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (391.2 KB). Loaded Objects now: 3702.
+Memory consumption went from 124.9 MB to 124.5 MB.
+Total: 23.889800 ms (FindLiveObjects: 0.665100 ms CreateObjectMapping: 0.961900 ms MarkObjects: 21.502000 ms  DeleteObjects: 0.749400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:LeapCSharp.NET3.5:  -> 0453dde615d5713e9629671647bd1ba0
+========================================================================
+Received Import Request.
+  Time since last request: 1885.392327 seconds.
+  path: Assets/LeapMotion
+  artifactKey: Guid(c6e8375801ed84be28f219cfb84c2935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion using Guid(c6e8375801ed84be28f219cfb84c2935) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9eff40507b76ad8c6b500c669d2f4aa1') in 0.024485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/LeapMotion/DemoResources/Prefabs/BugReporter.prefab
+  artifactKey: Guid(56a232dfb718cbf4586b16309baebe34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/DemoResources/Prefabs/BugReporter.prefab using Guid(56a232dfb718cbf4586b16309baebe34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c1e252cf94d1413ebb5b26849ca98819') in 0.241035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 30.364950 seconds.
+  path: Assets/LeapMotion/Materials/BlackReflectiveMat.mat
+  artifactKey: Guid(364695700348a4051a4b5f432ec91276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/BlackReflectiveMat.mat using Guid(364695700348a4051a4b5f432ec91276) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4412f00a13fa2cc072bc23762b1205bd') in 0.462802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LeapMotion/Materials/HandRimLighting.mat
+  artifactKey: Guid(6505cdca8fb8241d5b5f5d8ac3b247e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/HandRimLighting.mat using Guid(6505cdca8fb8241d5b5f5d8ac3b247e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a4384542ace4c0424b047ac109456186') in 0.037503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/LeapMotion/Materials/Glow_Robot_diffuse.mat
+  artifactKey: Guid(86dd744be526e9e43ae38709b1011445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/Glow_Robot_diffuse.mat using Guid(86dd744be526e9e43ae38709b1011445) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aceea6e53e925963f42e4ca9025df6cf') in 0.219950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/LeapMotion/Materials/CleanHandOuter.mat
+  artifactKey: Guid(76436aa3d3f424193a42ff2ab9083b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/CleanHandOuter.mat using Guid(76436aa3d3f424193a42ff2ab9083b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '443ae973886c2647e91998f84f9d5aa8') in 0.250964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/LeapMotion/Materials/CleanRobotHandTextured.mat
+  artifactKey: Guid(5ba08d5056d4b43a99bc4faa4915c18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/CleanRobotHandTextured.mat using Guid(5ba08d5056d4b43a99bc4faa4915c18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0b869d3aa781488949f4c44e74ec6d04') in 0.057625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/LeapMotion/Materials/IntersectionCubesTransparent.mat
+  artifactKey: Guid(ec5c3b1dad54040449d2c38905fbef96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/IntersectionCubesTransparent.mat using Guid(ec5c3b1dad54040449d2c38905fbef96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c7710f87ed59dcf87e3b2c9ff5c7d71') in 0.581245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000937 seconds.
+  path: Assets/LeapMotion/Materials/GlowRobotForearm.mat
+  artifactKey: Guid(f5671a210f2174f05b63e79f43c40f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/GlowRobotForearm.mat using Guid(f5671a210f2174f05b63e79f43c40f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c20e3f30a81f4fef42b1b25bd0c37839') in 0.046122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/LeapMotion/Materials/Passthrough/ThresholdOverlay.mat
+  artifactKey: Guid(aa4becb64f4f17d429ea16a4241a82e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/Passthrough/ThresholdOverlay.mat using Guid(aa4becb64f4f17d429ea16a4241a82e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8e0f2bbb7942aeb2e44ec73adbceb7b4') in 0.035359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000584 seconds.
+  path: Assets/LeapMotion/Materials/SkinDarkPepperModel.mat
+  artifactKey: Guid(44633cae08dad401f8a16c3833b77507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Materials/SkinDarkPepperModel.mat using Guid(44633cae08dad401f8a16c3833b77507) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '80f71addf22d8fdbdd4605242dd48fd3') in 0.053437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.048636 seconds.
+  path: Assets/LeapMotion/Models/LeapMotion_robotic_hand_FINAL_MID_poly_v02.obj
+  artifactKey: Guid(1591f8eda65a14357a4de2c3e3a57b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Models/LeapMotion_robotic_hand_FINAL_MID_poly_v02.obj using Guid(1591f8eda65a14357a4de2c3e3a57b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '75754647162c3ef46dd0df2a6207a6e1') in 1.499179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 381
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/LeapMotion/Models/RiggedSaltCutHandsSeparateNails.FBX
+  artifactKey: Guid(a263540df2704495e91da11beb21885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Models/RiggedSaltCutHandsSeparateNails.FBX using Guid(a263540df2704495e91da11beb21885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '733907f8399251f9f8922d42f9c4e5c1') in 0.161501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 86
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/LeapMotion/Models/RiggedSaltRoundedHands.FBX
+  artifactKey: Guid(7b535b19dc44e4f52a4946878af873de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Models/RiggedSaltRoundedHands.FBX using Guid(7b535b19dc44e4f52a4946878af873de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ca058f6dc106a67b430f57179d91d30') in 0.070529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/LeapMotion/Models/RiggedPepperFullHands.FBX
+  artifactKey: Guid(1140de03f648349c6976a0ad6bce907c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Models/RiggedPepperFullHands.FBX using Guid(1140de03f648349c6976a0ad6bce907c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bd8e1ae223c923d51c2ad70af588cd37') in 0.081306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 122
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LeapMotion/Models/RiggedSaltFullHands.FBX
+  artifactKey: Guid(874df97fdb36a446a82d4d369d8d3729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Models/RiggedSaltFullHands.FBX using Guid(874df97fdb36a446a82d4d369d8d3729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5f87fff5e583b9ff9bca00eea363d220') in 0.097593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 130
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/LeapMotion/Models/RiggedPepperCutHands.FBX
+  artifactKey: Guid(2fd862f812aa846649cab0657317a4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Models/RiggedPepperCutHands.FBX using Guid(2fd862f812aa846649cab0657317a4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c43347f2414cd3a39b172eba9e05b511') in 0.076346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 219.773513 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperBaseCutLeftHand.prefab
+  artifactKey: Guid(f908b62ffbe864392871ccab788e9c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperBaseCutLeftHand.prefab using Guid(f908b62ffbe864392871ccab788e9c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8932f5b1e3b920e1ae594d4e636063cf') in 0.070713 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 58
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperLightFullLeftHand.prefab
+  artifactKey: Guid(0ea7bf4e24d0846e2b245290bf408e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperLightFullLeftHand.prefab using Guid(0ea7bf4e24d0846e2b245290bf408e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '702d3cd84bdd4391b20b36dc398608d5') in 0.063416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperBaseFullLeftHand.prefab
+  artifactKey: Guid(eba068b4380af451aad6e8eb29d6a476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperBaseFullLeftHand.prefab using Guid(eba068b4380af451aad6e8eb29d6a476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '12082e9a7800fbda075fcc779c66b72d') in 0.037729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 72
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperDarkFullRightHand.prefab
+  artifactKey: Guid(fa3f3c00a3a0b468eb15ed53304a2c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperDarkFullRightHand.prefab using Guid(fa3f3c00a3a0b468eb15ed53304a2c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '52fe1a86ad64dbca0586aff69b31ed7d') in 0.038826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperLightCutRightHand.prefab
+  artifactKey: Guid(3651b102487274ab5aa9e19ae32656f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperLightCutRightHand.prefab using Guid(3651b102487274ab5aa9e19ae32656f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '15335362f7b817a8f2c38225009239d4') in 0.045295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperLightFullRightHand.prefab
+  artifactKey: Guid(e6fc8e4707ca54d9cbd8573505edec5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperLightFullRightHand.prefab using Guid(e6fc8e4707ca54d9cbd8573505edec5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e659e5d099012310bad36825e41b1a53') in 0.035568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperMediumCutLeftHand.prefab
+  artifactKey: Guid(b4189dbf66def4c9799dad49101582e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperMediumCutLeftHand.prefab using Guid(b4189dbf66def4c9799dad49101582e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a3a54a6b6996b1eaf4d7973e7a846143') in 0.043328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperMediumCutRightHand.prefab
+  artifactKey: Guid(84793ae866bd7489ebb054c1b4bcfb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperMediumCutRightHand.prefab using Guid(84793ae866bd7489ebb054c1b4bcfb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1b4b9c5d06e55184d2f3cceb8b644e4e') in 0.035367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperMediumFullLeftHand.prefab
+  artifactKey: Guid(e52d7ac5daec443ebb309c944ad3c825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperMediumFullLeftHand.prefab using Guid(e52d7ac5daec443ebb309c944ad3c825) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd6fad386f61e01ab2768dd65f68d5f9d') in 0.033970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltBaseCutRightHand.prefab
+  artifactKey: Guid(f81e7c706041b4c46b01c410de9815e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltBaseCutRightHand.prefab using Guid(f81e7c706041b4c46b01c410de9815e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '619d661d6a51b41236ed65756394f419') in 0.032799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 58
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/PepperBaseRoundedLeftHand.prefab
+  artifactKey: Guid(cb1d88ce102bb427cb16488041638669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/PepperBaseRoundedLeftHand.prefab using Guid(cb1d88ce102bb427cb16488041638669) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7b3d6316d16cf39cd8442de9204eb0ec') in 0.029326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 58
+========================================================================
+Received Import Request.
+  Time since last request: 1.518177 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsImage/ImageFullLeftHand.prefab
+  artifactKey: Guid(e9fcde724db27af479a62244440b8b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsImage/ImageFullLeftHand.prefab using Guid(e9fcde724db27af479a62244440b8b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '71d7fc8d130ef61b8b3898a8939d2d29') in 0.033939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 1.022388 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/CleanRobotFullLeftHand.prefab
+  artifactKey: Guid(9ae8a8acf486840e19397b18a914d915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/CleanRobotFullLeftHand.prefab using Guid(9ae8a8acf486840e19397b18a914d915) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8886db975d27097f7dd642cf4910ba81') in 0.048191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 443
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/GlowRobotRightHand.prefab
+  artifactKey: Guid(c261d0b9921014c4ea425092ef121aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/GlowRobotRightHand.prefab using Guid(c261d0b9921014c4ea425092ef121aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bd4236b840c3c8d7bafd628d1dce6ceb') in 0.261634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 141
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/DebugHand.prefab
+  artifactKey: Guid(e98e2c2cadb464c9892b9e4d60d61f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/DebugHand.prefab using Guid(e98e2c2cadb464c9892b9e4d60d61f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e185a3b64e1ad8e34afbb0c8a27c249f') in 0.004727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/CleanRobotLeftHand.prefab
+  artifactKey: Guid(e734beeefc33b46219db092ade06f82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/CleanRobotLeftHand.prefab using Guid(e734beeefc33b46219db092ade06f82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '12808000383c8ac9c471719ea384461a') in 0.042632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 436
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/PolyHand3.prefab
+  artifactKey: Guid(561ca011b57384fa0a1b0575a2f12d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/PolyHand3.prefab using Guid(561ca011b57384fa0a1b0575a2f12d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cf4b9e080368286bdcec4b5f0e723d35') in 0.006061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/GlowRobotFullLeftHand.prefab
+  artifactKey: Guid(704f5d64b4ac849cbb1d88b6a50f0975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/GlowRobotFullLeftHand.prefab using Guid(704f5d64b4ac849cbb1d88b6a50f0975) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fd586a5898cbbcc7a499d3e457c62deb') in 0.055880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 151
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/GlowRobotFullRightHand.prefab
+  artifactKey: Guid(7a511c744b475498891a2b1acc35e348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/GlowRobotFullRightHand.prefab using Guid(7a511c744b475498891a2b1acc35e348) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '75c89fe0caebf0bc69aa1c433ddf0468') in 0.046319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 151
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/CleanRobotRightHand.prefab
+  artifactKey: Guid(fb2d6e2c3c6ef431caaff3cf8beb3b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/CleanRobotRightHand.prefab using Guid(fb2d6e2c3c6ef431caaff3cf8beb3b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1c08d2b463e86c56ee73ac3cf6b06ff4') in 0.043693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 436
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/VoxelHand.prefab
+  artifactKey: Guid(40c6b72c85dbb47028f656da8052e8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/VoxelHand.prefab using Guid(40c6b72c85dbb47028f656da8052e8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '877dd9d177b3a4cbf3a2472391131352') in 0.008547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 105
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/PolyHand2.prefab
+  artifactKey: Guid(368ede197811445f9b84f8ade38f75cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/PolyHand2.prefab using Guid(368ede197811445f9b84f8ade38f75cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '35846b991e9a382aa97b9d0c1658dd2c') in 0.004670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsNonhuman/PolyHand1.prefab
+  artifactKey: Guid(7d0286b4b0dbe40248b3fe201ba8adf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsNonhuman/PolyHand1.prefab using Guid(7d0286b4b0dbe40248b3fe201ba8adf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2598dfb1aaefb99f2f2b9b30161d9cd1') in 0.008964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.610639 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsPhysical/RigidFullHand.prefab
+  artifactKey: Guid(f64990f14a4ef41e1aa0c2c8b5fbf1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsPhysical/RigidFullHand.prefab using Guid(f64990f14a4ef41e1aa0c2c8b5fbf1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '98030fbbadcba8479f4aa845ea7c793f') in 0.004571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 88
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsPhysical/ThickRigidHand.prefab
+  artifactKey: Guid(d1ee2987e72174f659cdf5447ad5403c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsPhysical/ThickRigidHand.prefab using Guid(d1ee2987e72174f659cdf5447ad5403c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'db5b14c67e8b7459cdc8487d72d8f871') in 0.004416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 84
+========================================================================
+Received Import Request.
+  Time since last request: 2.584420 seconds.
+  path: Assets/LeapMotion/Prefabs/Tools/FlashLight.prefab
+  artifactKey: Guid(00a0c033c1cee402a847a30b394643f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/Tools/FlashLight.prefab using Guid(00a0c033c1cee402a847a30b394643f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3abe76707cbb68202a82b82ce4ce63f1') in 0.035098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 31.845191 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltBaseFullRightHand.prefab
+  artifactKey: Guid(5ccc0e46bd54a42ce92c5bf30e795e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltBaseFullRightHand.prefab using Guid(5ccc0e46bd54a42ce92c5bf30e795e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f0afc699cc8d67b35c8ed7dac49761d9') in 0.097624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltDarkCutRightHand.prefab
+  artifactKey: Guid(f753ac161527744ce80c8603cac037a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltDarkCutRightHand.prefab using Guid(f753ac161527744ce80c8603cac037a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a29a82403eb7f19436943bcabc150241') in 0.063596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltBaseRoundedRightHand.prefab
+  artifactKey: Guid(2574bb36703b84e559f2f3b0da28a56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltBaseRoundedRightHand.prefab using Guid(2574bb36703b84e559f2f3b0da28a56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd35223c3cbd35f398e4fcf670c88b059') in 0.040376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 58
+========================================================================
+Received Import Request.
+  Time since last request: 0.443207 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltDarkFullLeftHand.prefab
+  artifactKey: Guid(828ed45ba0b8d4445b7f2d3bd8a2d692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltDarkFullLeftHand.prefab using Guid(828ed45ba0b8d4445b7f2d3bd8a2d692) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '76b03c6038c669ae3322eddbce2368f4') in 0.041024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumFullRightHand.prefab
+  artifactKey: Guid(0c286504d675f4f388780324725d8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumFullRightHand.prefab using Guid(0c286504d675f4f388780324725d8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ebb165b58c5d6b0a2901b7da2dc62a99') in 0.047745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltDarkRoundedLeftHand.prefab
+  artifactKey: Guid(53639f3c059494f84b2e5dcdb3027ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltDarkRoundedLeftHand.prefab using Guid(53639f3c059494f84b2e5dcdb3027ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '27cb34441e76b80a06ba1de1f2746445') in 0.040655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumCutLeftHand.prefab
+  artifactKey: Guid(5f4f1a5349b3243bfb0946ddda8768c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumCutLeftHand.prefab using Guid(5f4f1a5349b3243bfb0946ddda8768c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '73b867784debee51c7b12bd88242c836') in 0.050250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumCutRightHand.prefab
+  artifactKey: Guid(1359daef346c74018956e347e75a2ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumCutRightHand.prefab using Guid(1359daef346c74018956e347e75a2ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5f3325002c64da27e09ae55009dc0dfe') in 0.048316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltLightFullRightHand.prefab
+  artifactKey: Guid(d0cfc6e3159544c63b90900f49044b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltLightFullRightHand.prefab using Guid(d0cfc6e3159544c63b90900f49044b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '93a18dc5ef1b9a0aaefc3f568135ddad') in 0.045180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumRoundedRightHand.prefab
+  artifactKey: Guid(44031c121d4794ba19ffc330a027fc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltMediumRoundedRightHand.prefab using Guid(44031c121d4794ba19ffc330a027fc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ede1bbd2ea4aa6a709d0bc99a32e55ed') in 0.041306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LeapMotion/Prefabs/HandModelsHuman/SaltLightCutLeftHand.prefab
+  artifactKey: Guid(7a730e7ba4b3a4eca8eac740d1fae5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/Prefabs/HandModelsHuman/SaltLightCutLeftHand.prefab using Guid(7a730e7ba4b3a4eca8eac740d1fae5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '63368dfbaa1d304f4c5920eaac3af0b6') in 0.041965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 182.720739 seconds.
+  path: Assets/LeapMotion/DemoResources/Scripts/RecordingControls.cs
+  artifactKey: Guid(c1280410eeb1d462484194ea2192478c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeapMotion/DemoResources/Scripts/RecordingControls.cs using Guid(c1280410eeb1d462484194ea2192478c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4cbe06b2c157b350630a2fc8d6c49210') in 0.003078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
