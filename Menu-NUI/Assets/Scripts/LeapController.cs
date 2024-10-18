@@ -1,6 +1,6 @@
 using UnityEngine;
 using Leap;
-//using Leap.Unity; // Asegúrate de usar este si trabajas con el Leap SDK para Unity
+using Leap.Unity;
 
 public class LeapMotionMenuController : MonoBehaviour
 {
@@ -32,9 +32,7 @@ public class LeapMotionMenuController : MonoBehaviour
 
     private void DetectScroll(Hand hand)
     {
-        // Leap Motion usa su propio tipo 'Vector', pero en Unity utilizamos 'Vector3'
-        // Convertimos el Leap Vector a Vector3 de Unity
-        Vector3 handVelocity = hand.PalmVelocity.ToUnity();
+        Vector handVelocity = hand.PalmVelocity;
 
         // Ajustar umbral de desplazamiento
         if (Mathf.Abs(handVelocity.y) > 300)
@@ -72,5 +70,4 @@ public class LeapMotionMenuController : MonoBehaviour
         Debug.Log("Button clicked!");
     }
 }
-
 
