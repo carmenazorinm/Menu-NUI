@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/initscene.uss?fileID=7433441132597879392&amp;guid=35c7d2f9892c5c54c927a0ffd8e1c88c&amp;type=3#initscene" />
+    <ui:Label tabindex="-1" text="Ven si\nnecesitas \nAYUDA" parse-escape-sequences="true" display-tooltip-when-elided="true" name="espText" />
+    <ui:Label tabindex="-1" text="Come if \nyou need \nHELP" parse-escape-sequences="true" display-tooltip-when-elided="true" name="engText"/>
+</ui:UXML>

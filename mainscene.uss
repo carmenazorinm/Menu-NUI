@@ -1,0 +1,11 @@
+Button {
+    height: 250px;
+    width: 850px;
+    border-radius: 20px;
+    font-size: 80px;
+    align-self: center;
+    background-color: rgb(242, 231, 220);
+    color: rgb(13, 13, 13);
+    opacity: 0.75;
+    margin-top: 10px;
+}

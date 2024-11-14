@@ -1,0 +1,19 @@
+Label {
+    font-size: 100px;
+    align-self: center;
+    color: rgb(13, 13, 13);
+    opacity: 0.75;
+
+    width: 650px;
+    height: 300px;
+    position: absolute;
+    -unity-text-align: middle-center;
+}
+
+#espText{
+    top: 250px
+}
+
+#engText{
+    top: 1050px
+}

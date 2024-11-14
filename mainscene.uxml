@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/mainscene.uss?fileID=7433441132597879392&amp;guid=f62fcbd52bc5479418c7ac3994bdf23a&amp;type=3#mainscene" />
+    <ui:GroupBox name="Canvas" style="position: relative; left: 0; top: 0; right: 0; bottom: 0;">
+        <ui:Button text="Docencia" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Docencia" />
+        <ui:Button text="Gestión de trámites" parse-escape-sequences="true" display-tooltip-when-elided="true" name="gdt" />
+        <ui:Button text="Comedor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Comedor" />
+        <ui:Button text="Profesorado" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Profesorado" />
+        <ui:Button text="Aula" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Aula" />
+        <ui:Button text="Espacios comunes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ec" />
+        <ui:Button text="Serivicios Externos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="se" />
+        <ui:Button text="English" parse-escape-sequences="true" display-tooltip-when-elided="true" name="esp_eng" />
+    </ui:GroupBox>
+</ui:UXML>
