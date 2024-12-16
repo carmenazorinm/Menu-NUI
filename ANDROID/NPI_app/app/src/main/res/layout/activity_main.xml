@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -67,12 +68,13 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Docencia"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Docencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- AULAS -->
@@ -93,12 +95,13 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Aulas"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Aulas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- TRÁMITES -->
@@ -119,12 +122,13 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Trámites"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Trámites"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- SERVICIOS EXTERNOS -->
@@ -145,12 +149,13 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Servicios Externos"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Servicios\nExternos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- COMEDOR -->
@@ -171,12 +176,13 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Comedor"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Comedor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- PROFESORADO -->
@@ -197,12 +203,13 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Profesorado"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Profesorado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- ESPACIOS COMUNES -->
@@ -223,15 +230,16 @@
                 android:background="?android:selectableItemBackground"
                 android:contentDescription="Espacios Comunes"
                 android:scaleType="centerCrop" />
+
             <TextView
                 android:text="Espacios\nComunes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
-        <!-- OTROS -->
+        <!-- CHATBOT -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -242,19 +250,20 @@
             android:layout_marginRight="16dp">
 
             <ImageButton
-                android:id="@+id/btn_otros"
-                android:src="@drawable/ic_otros"
+                android:id="@+id/btn_chatbot"
+                android:src="@drawable/ic_micro"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Otros"
+                android:contentDescription="OyeETSIIT"
                 android:scaleType="centerCrop" />
+
             <TextView
-                android:text="Otros"
+                android:text="OyeETSIIT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp" />
         </LinearLayout>
     </GridLayout>
 
@@ -264,10 +273,34 @@
         android:id="@+id/downtoolbar"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:title="Menú Principal"
-        android:background="?android:attr/colorPrimary"
-        android:titleTextColor="@android:color/white"
+        android:background="#00E4DF"
         android:padding="16dp"
-        android:layout_gravity="bottom" />
+        android:layout_gravity="bottom">
+
+        <!-- Botón Izquierdo -->
+        <ImageButton
+            android:id="@+id/btn_usuario"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_usuario"
+            android:background="?android:selectableItemBackgroundBorderless"
+            app:tint="@android:color/white"
+            android:contentDescription="Usuario" />
+
+        <!-- Botón Derecho -->
+        <ImageButton
+            android:id="@+id/btn_ajustes"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_ajustes"
+            android:background="?android:selectableItemBackgroundBorderless"
+            app:tint="@android:color/white"
+            android:contentDescription="Ajustes"
+            android:layout_gravity="end" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
 
 </LinearLayout>
