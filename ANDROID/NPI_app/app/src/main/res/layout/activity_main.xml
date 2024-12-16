@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Barra superior (TopAppBar) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/uptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#00E4DF"
+        android:titleTextColor="@android:color/white"
+        android:padding="16dp"
+        tools:ignore="MissingClass"
+        android:layout_gravity="top">
+
+        <!-- Usamos un LinearLayout para centrar el TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Agregamos un TextView dentro de la Toolbar para personalizar el texto -->
+            <TextView
+                android:id="@+id/titulo_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menú Principal"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Contenedor para las opciones del menú -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins">
+
+        <!-- DOCENCIA -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_docencia"
+                android:src="@drawable/ic_docencia"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Docencia"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Docencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- AULAS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_aulas"
+                android:src="@drawable/ic_aulas"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Aulas"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Aulas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- TRÁMITES -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_tramites"
+                android:src="@drawable/ic_tramites"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Trámites"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Trámites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- SERVICIOS EXTERNOS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_servicios_externos"
+                android:src="@drawable/ic_servicios_externos"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Servicios Externos"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Servicios\nExternos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- COMEDOR -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_comedor"
+                android:src="@drawable/ic_comedor"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Comedor"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Comedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- PROFESORADO -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_profesorado"
+                android:src="@drawable/ic_profesorado"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Profesorado"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Profesorado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- ESPACIOS COMUNES -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_espacios_comunes"
+                android:src="@drawable/ic_espacios_comunes"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Espacios Comunes"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Espacios\nComunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- OTROS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_otros"
+                android:src="@drawable/ic_otros"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Otros"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="Otros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </GridLayout>
+
+
+    <!-- Barra inferior (DownAppBar) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/downtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:title="Menú Principal"
+        android:background="?android:attr/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>
