@@ -46,7 +46,7 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="56dp"
         android:rowCount="4"
         android:alignmentMode="alignMargins">
 
@@ -267,40 +267,12 @@
         </LinearLayout>
     </GridLayout>
 
-
-    <!-- Barra inferior (DownAppBar) -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/downtoolbar"
+    <!-- Reutilización de la Toolbar inferior -->
+    <include
+        android:id="@+id/down_toolbar"
+        layout="@layout/down_toolbar"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:background="#00E4DF"
-        android:padding="16dp"
-        android:layout_gravity="bottom">
-
-        <!-- Botón Izquierdo -->
-        <ImageButton
-            android:id="@+id/btn_usuario"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_usuario"
-            android:background="?android:selectableItemBackgroundBorderless"
-            app:tint="@android:color/white"
-            android:contentDescription="Usuario" />
-
-        <!-- Botón Derecho -->
-        <ImageButton
-            android:id="@+id/btn_ajustes"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_ajustes"
-            android:background="?android:selectableItemBackgroundBorderless"
-            app:tint="@android:color/white"
-            android:contentDescription="Ajustes"
-            android:layout_gravity="end" />
-
-    </androidx.appcompat.widget.Toolbar>
-
-
-
+        android:layout_alignParentBottom="true" />
 
 </LinearLayout>

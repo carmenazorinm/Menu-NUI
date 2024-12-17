@@ -17,6 +17,15 @@
             android:exported="false"
             android:label="@string/title_activity_localizacion"
             android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

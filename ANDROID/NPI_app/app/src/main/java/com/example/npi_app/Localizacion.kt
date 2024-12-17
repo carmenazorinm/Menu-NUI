@@ -20,7 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.npi_app.ui.theme.NPI_appTheme
 
-class Localizacion : ComponentActivity() {
+class Localizacion : BaseActivity() {
     var txtPosicion: EditText?=null
     var sm: SensorManager?=null
     var sa: Sensor?=null
