@@ -2,10 +2,11 @@ package com.example.npi_app
 
 import android.content.Context
 import android.content.Intent
-import android.widget.GridLayout
 import android.widget.ImageButton
+import android.widget.LinearLayout
+import androidx.appcompat.widget.Toolbar
 
-class DownToolBar(private val context: Context, private val toolbar: GridLayout) {
+class DownToolBar(private val context: Context, private val toolbar: LinearLayout) {
 
     init {
         // Inicializa los elementos de la toolbar inferior

@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NPI_app"
+rootProject.name = "ChatBot"
 include(":app")
-include(":ChatBot")

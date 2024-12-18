@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.npi_app"
-    compileSdk = 35
+    namespace = "com.example.chatbot"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.npi_app"
-        minSdk = 21
+        applicationId = "com.example.chatbot"
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -41,7 +41,6 @@ android {
 
 dependencies {
 
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -50,7 +49,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.appcompat)
+    implementation(libs.generativeai)
+    implementation(libs.firebase.vertexai)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -58,4 +58,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("com.google.ai.client.generativeai:generativeai:0.9.0")
 }
