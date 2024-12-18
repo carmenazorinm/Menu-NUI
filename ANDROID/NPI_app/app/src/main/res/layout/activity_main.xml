@@ -1,54 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <!-- Barra superior (TopAppBar) -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/uptoolbar"
-        android:layout_width="match_parent"
+    <!-- Reutilización de la Toolbar superior -->
+    <include
+        android:id="@+id/top_toolbar"
+        layout="@layout/top_toolbar"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:background="#00E4DF"
-        android:titleTextColor="@android:color/white"
         android:padding="16dp"
-        tools:ignore="MissingClass"
-        android:layout_gravity="top">
-
-        <!-- Usamos un LinearLayout para centrar el TextView -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <!-- Agregamos un TextView dentro de la Toolbar para personalizar el texto -->
-            <TextView
-                android:id="@+id/titulo_menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Menú Principal"
-                android:textColor="@android:color/white"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                android:gravity="center" />
-
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Contenedor para las opciones del menú -->
     <GridLayout
-        android:layout_width="match_parent"
+        android:id="@+id/menu_grid"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="56dp"
         android:rowCount="4"
-        android:alignmentMode="alignMargins">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/top_toolbar"
+        app:layout_constraintBottom_toTopOf="@id/down_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:alignmentMode="alignMargins"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Opciones del menú como LinearLayouts dentro del GridLayout -->
 
         <!-- DOCENCIA -->
         <LinearLayout
@@ -57,8 +43,8 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_columnWeight="1"
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_docencia"
@@ -84,8 +70,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_columnWeight="1"
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_aulas"
@@ -111,8 +97,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_tramites"
@@ -120,7 +105,7 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Trámites"
+                android:contentDescription="Boton Trámites"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -138,8 +123,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_servicios_externos"
@@ -165,8 +149,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_comedor"
@@ -192,8 +175,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_profesorado"
@@ -219,8 +201,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_espacios_comunes"
@@ -246,12 +227,11 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="16dp">
+            android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/btn_chatbot"
-                android:src="@drawable/ic_micro"
+                android:src="@drawable/ic_chatbot"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
@@ -265,6 +245,7 @@
                 android:gravity="center"
                 android:layout_marginTop="8dp" />
         </LinearLayout>
+
     </GridLayout>
 
     <!-- Reutilización de la Toolbar inferior -->
@@ -273,6 +254,7 @@
         layout="@layout/down_toolbar"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:layout_alignParentBottom="true" />
-
-</LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
