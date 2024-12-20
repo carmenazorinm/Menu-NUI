@@ -10,36 +10,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NPI_app"
+        android:theme="@style/Theme.ChatBot"
         tools:targetApi="31">
         <activity
-            android:name=".Localizacion"
-            android:exported="false"
-            android:label="@string/title_activity_localizacion"
-            android:theme="@style/Theme.NPI_app" />
-
-        <activity
-            android:name=".SettingsActivity"
-            android:exported="true"/>
-
-        <activity
-            android:name=".BaseActivity"
-            android:exported="true"/>
-
-        <activity android:name=".ChatBot"
-            android:exported="true" />
-
-        <activity
-            android:name=".MainActivity"
+            android:name=".ChatBot"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.NPI_app">
+            android:theme="@style/Theme.ChatBot">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-                <data android:scheme="chatbot" android:host="main" />
             </intent-filter>
         </activity>
     </application>

@@ -39,6 +39,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, Localizacion::class.java)
             startActivity(intent)
         }
+
+        // Encontramos el botón por su ID
+        val chatButton: ImageButton = findViewById(R.id.btn_chatbot)
+
+        // Establecemos el listener para el clic del botón
+        chatButton.setOnClickListener {
+            // Crear un Intent para iniciar la actividad LocalizacionActivity
+            val intent = Intent(this@MainActivity, ChatBot::class.java)
+            startActivity(intent)
+        }
     }
 
 }
