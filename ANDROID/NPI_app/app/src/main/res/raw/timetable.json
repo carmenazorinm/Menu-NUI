@@ -1,0 +1,85 @@
+{
+  "classrooms": {
+    "BD:86:7E:3E": {
+      "name": "1.1",
+      "timetable": {
+        "MONDAY": [
+          {"subject": "Visión por Computador", "start": "08:30", "end": "10:30", "group": "A","room":  "1.1"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "10:30", "end": "12:30", "group": "A","room":  "1.1"},
+          {"subject": "Aprendizaje Automático", "start": "12:30", "end": "14:30", "group": "A","room":  "1.1"},
+          {"subject": "Visión por Computador", "start": "15:30", "end": "17:30", "group": "A","room":  "1.1"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "17:30", "end": "19:30", "group": "A","room":  "1.1"},
+          {"subject": "Aprendizaje Automático", "start": "19:30", "end": "21:30", "group": "A","room":  "1.1"}
+        ],
+        "TUESDAY": [
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "08:30", "end": "10:30", "group": "B","room":  "1.1"},
+          {"subject": "Aprendizaje Automático", "start": "10:30", "end": "12:30", "group": "B","room":  "1.1"},
+          {"subject": "Visión por Computador", "start": "12:30", "end": "14:30", "group": "B","room":  "1.1"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "15:30", "end": "17:30", "group": "B","room":  "1.1"},
+          {"subject": "Aprendizaje Automático", "start": "17:30", "end": "19:30", "group": "B","room":  "1.1"},
+          {"subject": "Visión por Computador", "start": "19:30", "end": "21:30", "group": "B","room":  "1.1"}
+        ]
+      }
+    },
+    "ED:9E:F3:ED": {
+      "name": "2.1",
+      "timetable": {
+        "MONDAY": [
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "08:30", "end": "10:30", "group": "A1","room":  "2.1"},
+          {"subject": "Aprendizaje Automático", "start": "10:30", "end": "12:30", "group": "A1","room":  "2.1"},
+          {"subject": "Visión por Computador", "start": "12:30", "end": "14:30", "group": "A1","room":  "2.1"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "15:30", "end": "17:30", "group": "A1","room":  "2.1"},
+          {"subject": "Aprendizaje Automático", "start": "17:30", "end": "19:30", "group": "A1","room":  "2.1"},
+          {"subject": "Visión por Computador", "start": "19:30", "end": "21:30", "group": "A1","room":  "2.1"}
+        ],
+        "TUESDAY": [
+          {"subject": "Visión por Computador", "start": "08:30", "end": "10:30", "group": "A1","room":  "2.1"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "10:30", "end": "12:30", "group": "A1","room":  "2.1"},
+          {"subject": "Aprendizaje Automático", "start": "12:30", "end": "14:30", "group": "A1","room":  "2.1"},
+          {"subject": "Visión por Computador", "start": "15:30", "end": "17:30", "group": "A1","room":  "2.1"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "17:30", "end": "19:30", "group": "A1","room":  "2.1"},
+          {"subject": "Aprendizaje Automático", "start": "19:30", "end": "21:30", "group": "A1","room":  "2.1"}
+        ]
+      }
+    },
+    "02:59:26:35:04:A0:00": {
+      "name": "2.2",
+      "timetable": {
+        "MONDAY": [
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "08:30", "end": "10:30", "group": "A2","room":  "2.2"},
+          {"subject": "Aprendizaje Automático", "start": "10:30", "end": "12:30", "group": "A2","room":  "2.2"},
+          {"subject": "Visión por Computador", "start": "12:30", "end": "14:30", "group": "A2","room":  "2.2"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "15:30", "end": "17:30", "group": "A2","room":  "2.2"},
+          {"subject": "Aprendizaje Automático", "start": "17:30", "end": "19:30", "group": "A2","room":  "2.2"},
+          {"subject": "Visión por Computador", "start": "19:30", "end": "21:30", "group": "A2","room":  "2.2"}
+        ],
+        "TUESDAY": [
+          {"subject": "Visión por Computador", "start": "08:30", "end": "10:30", "group": "A2","room":  "2.2"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "10:30", "end": "12:30", "group": "A2","room":  "2.2"},
+          {"subject": "Aprendizaje Automático", "start": "12:30", "end": "14:30", "group": "A2","room":  "2.2"},
+          {"subject": "Visión por Computador", "start": "15:30", "end": "17:30", "group": "A2","room":  "2.2"},
+          {"subject": "Nuevos Paradigmas de Interacción", "start": "17:30", "end": "19:30", "group": "A2","room":  "2.2"},
+          {"subject": "Aprendizaje Automático", "start": "19:30", "end": "21:30", "group": "A2","room":  "2.2"}
+        ]
+      }
+    }
+  },
+  "personalTimetable": {
+    "MONDAY": [
+      {"subject": "Visión por Computador", "start": "08:30", "end": "10:30", "group": "A", "room":  "1.1"},
+      {"subject": "Aprendizaje Automático", "start": "10:30", "end": "12:30", "group": "A1", "room":  "2.1"},
+      {"subject": "Visión por Computador", "start": "12:30", "end": "14:30", "group": "A1", "room":  "2.1"},
+      {"subject": "Visión por Computador", "start": "15:30", "end": "17:30", "group": "A", "room":  "1.1"},
+      {"subject": "Aprendizaje Automático", "start": "17:30", "end": "19:30", "group": "A1", "room":  "2.1"},
+      {"subject": "Visión por Computador", "start": "19:30", "end": "21:30", "group": "A1", "room":  "2.1"}
+    ],
+    "TUESDAY": [
+      {"subject": "Visión por Computador", "start": "08:30", "end": "10:30", "group": "A1", "room": "2.1"},
+      {"subject": "Nuevos Paradigmas de Interacción", "start": "10:30", "end": "12:30", "group": "A1", "room": "2.1"},
+      {"subject": "Aprendizaje Automático", "start": "12:30", "end": "14:30", "group": "A1", "room": "2.1"},
+      {"subject": "Visión por Computador", "start": "15:30", "end": "17:30", "group": "A1", "room": "2.1"},
+      {"subject": "Nuevos Paradigmas de Interacción", "start": "17:30", "end": "19:30", "group": "A1", "room": "2.1"},
+      {"subject": "Aprendizaje Automático", "start": "19:30", "end": "21:30", "group": "A1", "room": "2.1"}
+    ]
+  }
+}

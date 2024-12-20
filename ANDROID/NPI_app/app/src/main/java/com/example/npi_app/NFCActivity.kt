@@ -3,23 +3,18 @@ package com.example.npi_app
 
 import android.app.Activity
 import android.content.Intent
-import android.nfc.tech.NfcA
 import android.widget.TextView
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.Toast
-import androidx.activity.ComponentActivity
 import android.app.PendingIntent
 import android.content.IntentFilter
 import android.nfc.NfcAdapter
 import android.nfc.Tag
-import android.nfc.tech.NfcF
 import android.os.Build
 import android.os.Bundle
-import android.provider.ContactsContract.Profile
 import android.util.Log
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import android.speech.tts.TextToSpeech
 import android.text.Html
 import android.text.SpannableString
@@ -33,7 +28,7 @@ import java.time.LocalTime
 import java.util.Locale
 
 
-class NFCActivity : Activity(), TextToSpeech.OnInitListener{
+class NFCActivity : BaseActivity(), TextToSpeech.OnInitListener{
     private var nfcAdapter: NfcAdapter? = null
     private var textToSpeech: TextToSpeech? = null
 
@@ -100,22 +95,20 @@ class NFCActivity : Activity(), TextToSpeech.OnInitListener{
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        if (intent == null) return
 
         // Handle NFC intent
-        if (NfcAdapter.ACTION_TAG_DISCOVERED == intent.action) {
-            // Check which layout file is loaded
-
-            // Hide nfcScanImg
+        if (NfcAdapter.ACTION_TAG_DISCOVERED == intent?.action) {
+            // Aquí ya puedes continuar con el código, sabiendo que `intent` no es null
             val nfcScanImg = findViewById<ImageView>(R.id.nfcScanImg)
             val progressBar = findViewById<ProgressBar>(R.id.progressBar)
 
-            if(nfcScanImg != null && progressBar != null) {
+            if (nfcScanImg != null && progressBar != null) {
                 nfcScanImg.visibility = View.GONE
                 progressBar.visibility = View.VISIBLE
             }
+
             val tag: Tag? = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG)
             val extra_ndef = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)
             Log.d("NFC", "NDEF: $extra_ndef")
@@ -136,12 +129,10 @@ class NFCActivity : Activity(), TextToSpeech.OnInitListener{
                 setContentView(R.layout.nfc_loaded_classroom_layout)
 
                 processNfcTag(hexId)
-
             }
-
-
         }
     }
+
 
     override fun onInit(p0: Int) {
         if(p0 == TextToSpeech.SUCCESS){

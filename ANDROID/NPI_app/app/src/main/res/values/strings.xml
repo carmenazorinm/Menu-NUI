@@ -1,4 +1,27 @@
 <resources>
     <string name="app_name">NPI_app</string>
     <string name="title_activity_localizacion">Localizacion</string>
+    <string name="menu_item_1">Comprobación de aulas</string>
+    <string name="menu_item_2" translatable="false">Menu 2</string>
+    <string name="language">Idioma</string>
+    <string name="title_activity_nfcactivity">Comprobación de aulas</string>
+    <string name="please_scan">Escanea la tarjeta del aula que quieres consultar.</string>
+    <string name="classroom_info_placeholder" translatable="false">Estás en el aula 3.1. Ahora mismo en este aula hay clase de Estructuras de Datos. La próxima clase es de Visión por Computador, y empieza a las 13:30. Tú no tienes clase en este aula. Ahora mismo tienes Nuevos Paradigmas de Interacción en el aula 2.2, y a las 13:30 tienes Aprendizaje Automático en el aula 2.4</string>
+    <string name="classroom_info_room">Estás en el aula &lt;b>%1$s&lt;/b>.</string>
+    <string name="classroom_info_curr_subject">Ahora mismo en este aula tiene lugar la clase de &lt;b>%1$s&lt;/b>, del grupo &lt;b>%2$s&lt;/b>.</string>
+    <string name="classroom_info_next_subject">La próxima clase es de &lt;b>%1$s&lt;/b>, del grupo &lt;b>%2$s&lt;/b>, que empieza a las &lt;b>%3$s&lt;/b>.</string>
+    <string name="classroom_info_this_room_yes">Tienes clase en este aula ahora.</string>
+    <string name="classroom_info_this_room_no">No tienes clase en este aula ahora.</string>
+    <string name="classroom_info_my_curr_subject">Ahora mismo tienes clase en el aula &lt;b>%1$s&lt;/b> de &lt;b>%2$s&lt;/b>.</string>
+    <string name="classroom_info_my_curr_subject_no">No tienes ninguna clase en este momento.</string>
+    <string name="classroom_info_my_next_subject">Después tienes clase de &lt;b>%1$s&lt;/b> en el aula &lt;b>%2$s&lt;/b> a las &lt;b>%3$s&lt;/b>.</string>
+    <string name="classroom_info_my_next_subject_no">No tienes más clases hoy.</string>
+    <string name="classroom_info_curr_no_subject">No hay clases en este aula ahora mismo.</string>
+    <string name="classroom_info_next_no_subject">No hay más clases programadas para hoy en este aula.</string>
+
+    <string name="classroom_short_room">&lt;b>Aula: %1$s&lt;/b></string>
+    <string name="classroom_short_curr_subject">&lt;b>Asignatura actual:&lt;/b> %1$s (Grupo %2$s)</string>
+    <string name="classroom_short_next_subject">&lt;b>Próxima asignatura:&lt;/b> %1$s (Grupo %2$s) a las %3$s</string>
+    <string name="classroom_short_my_curr_subject">&lt;b>Tu clase actual:&lt;/b> %1$s (Grupo %2$s) en %3$s</string>
+    <string name="classroom_short_my_next_subject">&lt;b>Tu próxima clase:&lt;/b> %1$s (Grupo %2$s) a las %3$s en %4$s</string>
 </resources>

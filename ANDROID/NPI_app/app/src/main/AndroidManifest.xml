@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
 
     <application
         android:allowBackup="true"
@@ -55,6 +56,10 @@
 
         <activity
             android:name=".BaseActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".NFCActivity"
             android:exported="true"/>
 
         <activity
