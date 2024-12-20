@@ -7,7 +7,7 @@
     android:background="#00E4DF"
     android:padding="16dp"
     android:layout_gravity="bottom"
-    android:columnCount="2"
+    android:columnCount="3"
     android:rowCount="1"
     android:alignmentMode="alignMargins">
 
@@ -28,6 +28,24 @@
             android:src="@drawable/ic_usuario"
             app:tint="@android:color/white"
             android:padding="10dp"/>
+    </LinearLayout>
+
+    <!-- Imagen Central -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/central_image"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_ugr"
+            android:contentDescription="Logo"
+            android:scaleType="centerInside"
+            app:tint="@android:color/white"/>
     </LinearLayout>
 
     <LinearLayout
