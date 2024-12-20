@@ -2,8 +2,8 @@ package com.example.npi_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.GridLayout
 import android.widget.ImageButton
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         tituloMenu.text = "MENÚ PRINCIPAL"
 
         // Obtén la referencia a la toolbar inferior desde el archivo XML
-        val downToolBar: LinearLayout = findViewById(R.id.down_toolbar)
+        val downToolBar: GridLayout = findViewById(R.id.down_toolbar)
 
         // Crea una instancia de ToolbarInferior para gestionar el comportamiento del toolbar
         DownToolBar(this, downToolBar)
@@ -37,19 +37,6 @@ class MainActivity : AppCompatActivity() {
         aulasButton.setOnClickListener {
             // Crear un Intent para iniciar la actividad LocalizacionActivity
             val intent = Intent(this@MainActivity, Localizacion::class.java)
-            startActivity(intent)
-        }
-
-        // Encontramos el botón por su ID
-        val chatButton: ImageButton = findViewById(R.id.btn_chatbot)
-
-        // Establecemos el listener para el clic del botón
-        chatButton.setOnClickListener {
-            // Crear un Intent para iniciar la actividad LocalizacionActivity
-            val intent = Intent().setClassName(
-                "com.example.chatbot",  // Paquete del módulo
-                "com.example.chatbot.MainActivity" // Clase de MainActivity
-            )
             startActivity(intent)
         }
     }
