@@ -21,6 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "NPI_app"
 include(":app")
-include(":ChatBot")
-project(":ChatBot").projectDir = File("ChatBot")
  
