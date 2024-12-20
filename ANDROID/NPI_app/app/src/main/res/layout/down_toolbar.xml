@@ -27,7 +27,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/ic_usuario"
             app:tint="@android:color/white"
-            android:padding="8dp"/>
+            android:padding="10dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -46,6 +46,6 @@
             android:scaleType="fitCenter"
             android:src="@drawable/ic_ajustes"
             app:tint="@android:color/white"
-            android:padding="6dp"/>
+            android:padding="8dp"/>
     </LinearLayout>
 </GridLayout>

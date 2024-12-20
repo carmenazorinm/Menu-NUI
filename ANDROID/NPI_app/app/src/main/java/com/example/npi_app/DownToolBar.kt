@@ -14,7 +14,7 @@ class DownToolBar(private val context: Context, private val toolbar: GridLayout)
         // Configura el onClickListener para el botón de ajustes
         btnAjustes.setOnClickListener {
             // Navega a la pantalla de ajustes
-            val intent = Intent(context, SettingsActivity::class.java)
+            val intent = Intent(context, AjustesActivity::class.java)
             context.startActivity(intent)
         }
     }

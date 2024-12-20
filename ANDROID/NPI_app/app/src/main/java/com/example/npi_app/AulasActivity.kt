@@ -8,19 +8,8 @@ import android.hardware.SensorManager
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.npi_app.ui.theme.NPI_appTheme
 
-class Localizacion : BaseActivity() {
+class AulasActivity : BaseActivity() {
     var txtPosicion: EditText?=null
     var sm: SensorManager?=null
     var sa: Sensor?=null

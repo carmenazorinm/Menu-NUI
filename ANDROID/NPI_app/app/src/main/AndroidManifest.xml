@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,13 +16,41 @@
         android:theme="@style/Theme.NPI_app"
         tools:targetApi="31">
         <activity
-            android:name=".Localizacion"
+            android:name=".AulasActivity"
             android:exported="false"
             android:label="@string/title_activity_localizacion"
             android:theme="@style/Theme.NPI_app" />
 
         <activity
-            android:name=".SettingsActivity"
+            android:name=".AjustesActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ChatBotActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ComedorActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".DocenciaActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".EspComActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ProfesoradoActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ServExtActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".TramitesActivity"
             android:exported="true"/>
 
         <activity
