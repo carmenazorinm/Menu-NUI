@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -60,6 +61,14 @@
 
         <activity
             android:name=".NFCActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".CalendarioAcademicoActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".CalendarioExamenesActivity"
             android:exported="true"/>
 
         <activity

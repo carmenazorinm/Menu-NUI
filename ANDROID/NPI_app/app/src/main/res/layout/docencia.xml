@@ -86,7 +86,7 @@
 
             <ImageButton
                 android:id="@+id/btn_calendario"
-                android:src="@drawable/ic_aulas"
+                android:src="@drawable/ic_calendario"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
@@ -113,7 +113,7 @@
 
             <ImageButton
                 android:id="@+id/btn_examenes"
-                android:src="@drawable/ic_tramites"
+                android:src="@drawable/ic_examen"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"

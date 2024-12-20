@@ -12,5 +12,13 @@ class DocenciaActivity : BaseActivity() {
         findViewById<ImageButton>(R.id.btn_horario).setOnClickListener {
             startActivity(Intent(this, NFCActivity::class.java))
         }
+
+        findViewById<ImageButton>(R.id.btn_calendario).setOnClickListener {
+            startActivity(Intent(this, CalendarioAcademicoActivity::class.java))
+        }
+
+        findViewById<ImageButton>(R.id.btn_examenes).setOnClickListener {
+            startActivity(Intent(this, CalendarioExamenesActivity::class.java))
+        }
     }
 }
