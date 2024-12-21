@@ -9,8 +9,11 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import android.content.pm.PackageManager
+import android.content.res.Resources
+import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.android.gms.maps.model.MapStyleOptions
 
 private val LOCATION_PERMISSION_REQUEST = 1
 
@@ -30,6 +33,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
+
+        // Aplica el estilo personalizado
+        setCustomMapStyle()
 
         map.clear()
 
@@ -59,6 +65,20 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
             map.isMyLocationEnabled = true
         }
     }
+
+    private fun setCustomMapStyle() {
+        try {
+            val success = map.setMapStyle(
+                MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style)
+            )
+            if (!success) {
+                Log.e("MapActivity", "Error al aplicar el estilo del mapa")
+            }
+        } catch (e: Resources.NotFoundException) {
+            Log.e("MapActivity", "Archivo de estilo no encontrado. Error: ", e)
+        }
+    }
+
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
