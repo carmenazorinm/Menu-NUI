@@ -23,6 +23,7 @@ import androidx.core.content.ContextCompat
 import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.PolygonOptions
 import com.google.android.gms.maps.model.PolylineOptions
@@ -30,6 +31,11 @@ import kotlin.math.max
 import kotlin.math.min
 
 private val LOCATION_PERMISSION_REQUEST = 1
+
+// Triángulo de la ETSIIT
+val vertex1 = LatLng(37.196411, -3.624360) // Primer vértice
+val vertex2 = LatLng(37.197556, -3.625165) // Segundo vértice
+val vertex3 = LatLng(37.197436, -3.623304) // Tercer vértice
 
 data class Nodo(
     val nombre: String,
@@ -173,6 +179,17 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
         map.addMarker(MarkerOptions().position(porteria.posicion).title("Portería"))
         map.addMarker(MarkerOptions().position(despacho.posicion).title("Despachos"))
 
+        // Crear límites que incluyan los tres vértices
+        val bounds = LatLngBounds.Builder()
+            .include(vertex1)
+            .include(vertex2)
+            .include(vertex3)
+            .build()
+
+        // Ajustar el enfoque del mapa para que los límites sean visibles
+        val padding = 100 // Espacio adicional en píxeles alrededor de los límites
+        map.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, padding))
+
         // Configura el evento de clic en el marcador
         map.setOnMarkerClickListener { marker ->
             marker.showInfoWindow() // Mostrar el título cuando se haga clic
@@ -182,7 +199,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
             if (nodoDestino != null) {
                 // Obtener la ubicación actual del usuario antes de mostrar el botón de ruta
                 obtenerUbicacionActual { ubicacionActual ->
-                    mostrarBotonRuta(ubicacionActual, nodoDestino)
+                    if (estaDentroDeLaFacultad(ubicacionActual)) {
+                        mostrarBotonRuta(ubicacionActual, nodoDestino)
+                    }
                 }
             }
             true
@@ -232,12 +251,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
             .addOnSuccessListener { location: Location? ->
                 if (location != null) {
                     val currentLatLng = LatLng(location.latitude, location.longitude)
-                   /* if (estaDentroDeLaFacultad(currentLatLng)) {
-                        map.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 15f))
-                    } else {
-                        // Mostrar el mensaje modificado
+                    if (!estaDentroDeLaFacultad(currentLatLng)) {
                         Toast.makeText(this, "Vaya! Parece que no estás en la ETSIIT", Toast.LENGTH_SHORT).show()
-                    }*/
+                    }
                 }
             }
     }
@@ -353,9 +369,6 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
 
     fun estaDentroDeLaFacultad(latLng: LatLng): Boolean {
         // Coordenadas de los vértices del triángulo
-        val vertex1 = LatLng(37.196411, -3.624360) // Primer vértice
-        val vertex2 = LatLng(37.197556, -3.625165) // Segundo vértice
-        val vertex3 = LatLng(37.197436, -3.623304) // Tercer vértice
 
         val areaEtsiit = listOf(vertex1, vertex2, vertex3)
 
