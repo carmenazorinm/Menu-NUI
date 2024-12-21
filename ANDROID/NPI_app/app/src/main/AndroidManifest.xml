@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.NFC" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +21,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NPI_app"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAxXbZyS83Jvs54j05_mHIO3yStqPgtYQE" />
+  
         <activity
             android:name=".LoginActivity"
             android:exported="true" >
@@ -28,6 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".AulasActivity"
             android:exported="false"
@@ -82,6 +90,10 @@
 
         <activity
             android:name=".CalendarioExamenesActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MapActivity"
             android:exported="true"/>
 
         <activity

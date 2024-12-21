@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         aulasButton.setOnClickListener {
             // Crear un Intent para iniciar la actividad AulasActivity
-            val intent = Intent(this@MainActivity, AulasActivity::class.java)
+            val intent = Intent(this@MainActivity, MapActivity::class.java)
             startActivity(intent)
         }
 
