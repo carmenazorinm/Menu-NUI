@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
                 finish() // Opcional: cerrar la actividad de login
             } else {
                 // Mostrar un mensaje de error
-                Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Error: usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
         }
     }

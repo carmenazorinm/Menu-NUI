@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@drawable/logo_etsiit"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -20,20 +20,6 @@
         android:gravity="center"
         android:layout_above="@id/card_view"
         android:padding="28dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_usuario"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GO MAP"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="32sp"
-            android:textColor="@color/white"/>
 
 
     </LinearLayout>
@@ -72,7 +58,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Usuario"
+                android:text="Usuario (user)"
                 android:alpha="0.7"
                 android:textStyle="bold"/>
 
@@ -91,7 +77,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contraseña"
+                android:text="Contraseña (1234)"
                 android:alpha="0.7"
                 android:textStyle="bold"/>
             <EditText
