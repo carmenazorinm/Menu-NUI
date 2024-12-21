@@ -34,7 +34,7 @@ class CalendarioExamenesActivity : BaseActivity() {
         webView.settings.builtInZoomControls = true // Habilitar los controles de zoom
         try {
             // Intentamos cargar el URL del PDF
-            webView.loadUrl("https://etsiit.ugr.es/sites/centros/etsiit/public/inline-files/CalendarioExamenes24-25-GII.pdf")
+            webView.loadUrl("https://docs.google.com/gview?embedded=true&url=https://etsiit.ugr.es/sites/centros/etsiit/public/inline-files/CalendarioExamenes24-25-GII.pdf")
 
             Log.d("Calendar", "Calendario listo")
         } catch (e: Exception) {
