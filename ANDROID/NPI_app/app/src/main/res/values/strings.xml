@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NPI_app</string>
     <string name="title_activity_localizacion">Localizacion</string>
+    <string name="title_activity_login">LoginActivity</string>
     <string name="menu_item_1">Comprobación de aulas</string>
     <string name="menu_item_2" translatable="false">Menu 2</string>
     <string name="language">Idioma</string>
