@@ -12,4 +12,6 @@ val Pink40 = Color(0xFF7D5260)
 
 val AzulChat = Color(0xFF33AFFF)
 val VerdeChat = Color(0xFF33FF4E)
-val RojoChat = Color(0xFFB72C29)
+val MarronETSIIT = Color(0xFF68320D)
+val MarronETSIITBanner = Color(0xFFA44B11)
+val ThemeColor = Color(0xFF00E4DF)

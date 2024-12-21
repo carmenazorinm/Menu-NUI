@@ -1,12 +1,12 @@
 package com.example.npi_app
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -45,7 +45,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.example.npi_app.ui.theme.ChatBotTheme
 import com.example.npi_app.ui.theme.AzulChat
-import com.example.npi_app.ui.theme.RojoChat
+import com.example.npi_app.ui.theme.MarronETSIIT
+import com.example.npi_app.ui.theme.MarronETSIITBanner
+import com.example.npi_app.ui.theme.ThemeColor
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.content
 import kotlinx.coroutines.launch
@@ -72,6 +74,7 @@ class ChatViewModel : ViewModel() {
         mutableStateListOf<MessageModel>(MessageModel("Hola, ¿en qué puedo ayudarte?", "model"))
     }
 
+    @SuppressLint("SecretInSource")
     val generativeModel : GenerativeModel = GenerativeModel(
         modelName = "gemini-pro",
         apiKey = Constants.apiKey
@@ -89,9 +92,9 @@ class ChatViewModel : ViewModel() {
                 )
 
                 messageList.add(MessageModel(question, "user"))
-                messageList.add(MessageModel("Escribiendo...","model"))
+                messageList.add(MessageModel("Pensando...","model"))
 
-                val response = chat.sendMessage("La siguiente consulta está relacionada con la facultad de informática de la Universidad de Granada: " + question)
+                val response = chat.sendMessage("Estudio informática en la Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación de la Universidad de Granada. Tengo una pregunta con la universidad: " + question)
                 messageList.removeLast()
                 messageList.add(MessageModel(response.text.toString(), "model"))
             } catch (e : Exception) {
@@ -120,7 +123,7 @@ fun CharPage(modifier: Modifier = Modifier, viewModel: ChatViewModel) {
                 .align(Alignment.Center),
             painter = painterResource(id = R.drawable.logougr),
             contentDescription = "Logo",
-            tint = RojoChat
+            tint = MarronETSIIT
         )
     }
 
@@ -168,7 +171,7 @@ fun MessageRow(messageModel: MessageModel) {
                         bottom = 8.dp
                     )
                     .clip(RoundedCornerShape(48f))
-                    .background(if(isModel) RojoChat else AzulChat)
+                    .background(if(isModel) MarronETSIIT else ThemeColor)
                     .padding(16.dp)
             ) {
                 SelectionContainer {
@@ -220,11 +223,11 @@ fun AppHeader() {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .background(RojoChat)
+            .background(MarronETSIITBanner)
     ) {
         Text(
             modifier = Modifier.padding(16.dp),
-            text = "Asistente",
+            text = "OyeETSIIT",
             color = Color.White,
             fontSize = 22.sp
         )
