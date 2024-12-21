@@ -34,10 +34,8 @@
             android:label="@string/title_activity_localizacion"
             android:theme="@style/Theme.NPI_app" />
         <activity
-            android:name=".SettingsActivity"
-            android:exported="true" />
             android:name=".AjustesActivity"
-            android:exported="true"/>
+            android:exported="true" />
 
         <activity
             android:name=".ChatBotActivity"
