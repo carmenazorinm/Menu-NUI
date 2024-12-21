@@ -102,16 +102,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, ChatBot::class.java)
             startActivity(intent)
         }
-
-        // Encontramos el botón por su ID
-        val docButton: ImageButton = findViewById(R.id.btn_docencia)
-
-        // Establecemos el listener para el clic del botón
-        docButton.setOnClickListener {
-            // Crear un Intent para iniciar la actividad LocalizacionActivity
-            val intent = Intent(this@MainActivity, LoginActivity::class.java)
-            startActivity(intent)
-        }
         
         // MICRÓFONO
 
