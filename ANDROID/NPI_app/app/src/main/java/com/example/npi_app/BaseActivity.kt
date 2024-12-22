@@ -2,11 +2,13 @@ package com.example.npi_app
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import java.util.Locale
 
 open class BaseActivity : AppCompatActivity() {
 
@@ -74,10 +76,18 @@ open class BaseActivity : AppCompatActivity() {
         layout.setOnTouchListener(touchListener)
     }
 
-    override fun attachBaseContext(newBase: Context) {
-        val sharedPreferences = newBase.getSharedPreferences("settings", MODE_PRIVATE)
-        val language = sharedPreferences.getString("language", "es") ?: "es" // Español por defecto
-        super.attachBaseContext(LocaleHelper.updateLocale(newBase, language))
+    override fun attachBaseContext(newBase: Context?) {
+        val language = newBase?.let { LocaleManager.getSavedLanguage(it) } ?: Locale.getDefault().language
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+
+        val config = Configuration(newBase?.resources?.configuration)
+        config.setLocale(locale)
+        config.setLayoutDirection(locale)
+
+        if (newBase != null) {
+            super.attachBaseContext(newBase.createConfigurationContext(config))
+        }
     }
 
 }
