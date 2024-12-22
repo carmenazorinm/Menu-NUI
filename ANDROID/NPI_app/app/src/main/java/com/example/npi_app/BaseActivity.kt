@@ -1,5 +1,6 @@
 package com.example.npi_app
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -71,6 +72,12 @@ open class BaseActivity : AppCompatActivity() {
         // Aplicar el listener al layout de la actividad
         val layout = findViewById<View>(android.R.id.content)
         layout.setOnTouchListener(touchListener)
+    }
+
+    override fun attachBaseContext(newBase: Context) {
+        val sharedPreferences = newBase.getSharedPreferences("settings", MODE_PRIVATE)
+        val language = sharedPreferences.getString("language", "es") ?: "es" // Español por defecto
+        super.attachBaseContext(LocaleHelper.updateLocale(newBase, language))
     }
 
 }

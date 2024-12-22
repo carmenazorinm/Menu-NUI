@@ -15,17 +15,9 @@ class AjustesActivity : BaseActivity() {
         val btnAleman = findViewById<ImageButton>(R.id.btn_aleman)
 
         // Configuración de los listeners para cambiar el idioma
-        btnEspanol.setOnClickListener {
-            setLocale("es") // Cambia a español
-        }
-
-        btnIngles.setOnClickListener {
-            setLocale("en") // Cambia a inglés
-        }
-
-        btnAleman.setOnClickListener {
-            setLocale("de") // Cambia a alemán
-        }
+        btnEspanol.setOnClickListener { saveLocaleAndRecreate("es") }
+        btnIngles.setOnClickListener { saveLocaleAndRecreate("en") }
+        btnAleman.setOnClickListener { saveLocaleAndRecreate("de") }
     }
 
     private fun setLocale(language: String) {
@@ -37,5 +29,14 @@ class AjustesActivity : BaseActivity() {
 
         // Reinicia la actividad para aplicar los cambios de idioma
         recreate()
+    }
+
+    private fun saveLocaleAndRecreate(language: String) {
+        val sharedPreferences = getSharedPreferences("settings", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putString("language", language)
+        editor.apply()
+
+        recreate() // Reinicia solo esta actividad
     }
 }

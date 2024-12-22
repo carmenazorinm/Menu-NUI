@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat
 import java.util.Locale
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var voiceSearchButton: ImageButton
     private lateinit var speechRecognizer: SpeechRecognizer
