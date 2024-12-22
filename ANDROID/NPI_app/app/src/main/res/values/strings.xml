@@ -111,4 +111,16 @@
     <string name="c_acad">Calendario\nAcadémico</string>
     <string name="c_exam">Calendario\nde Exámenes</string>
 
+    <string name="informatica">Ingeniería Informática</string>
+    <string name="teleco">Telecomunicaciones</string>
+    <string name="iim">Ingeniería Informática\ny Matemáticas</string>
+    <string name="iiade">Ingeniería Informática\ny ADE</string>
+    <string name="dgiim" translatable="false">DGIIM</string>
+    <string name="dgiiade" translatable="false">DGIIADE</string>
+
+    <string name="docente">Docente</string>
+    <string name="departamento">Departamento</string>
+    <string name="tutorias1">Tutorías\nprimer semestre</string>
+    <string name="tutorias2">Tutorías\nsegundo semestre</string>
+
 </resources>

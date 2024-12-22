@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TRAMITES"
+            android:text="@string/tramites"
             android:textColor="@android:color/white"
             android:textSize="26sp"
             android:textStyle="bold" />
@@ -66,7 +66,7 @@
                     android:scaleType="centerCrop" />
 
                 <TextView
-                    android:text="Informática"
+                    android:text="@string/informatica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -94,7 +94,7 @@
                     android:scaleType="centerCrop" />
 
                 <TextView
-                    android:text="Telecomunicaciones"
+                    android:text="@string/teleco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -121,7 +121,7 @@
                     android:scaleType="centerCrop" />
 
                 <TextView
-                    android:text="Ingeniería Informática y Matemáticas"
+                    android:text="@string/iim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -148,7 +148,7 @@
                     android:scaleType="centerCrop" />
 
                 <TextView
-                    android:text="Ingeniería Informática y ADE"
+                    android:text="@string/iiade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"

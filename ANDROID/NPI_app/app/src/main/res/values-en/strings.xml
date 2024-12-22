@@ -76,7 +76,7 @@
     <string name="tramites">Procedures</string>
     <string name="pagos">My Payments</string>
     <string name="comedor">Canteen</string>
-    <string name="profesorado">Faculty</string>
+    <string name="profesorado">Professors</string>
     <string name="servicios_ext">External\nServices</string>
     <string name="espacios_com">Common\nSpaces</string>
     <string name="chatbot">HeyETSIIT</string>
@@ -90,6 +90,18 @@
     <string name="horario">Timetable\nLookup</string>
     <string name="c_acad">Academic\nCalendar</string>
     <string name="c_exam">Exam\nCalendar</string>
+
+    <string name="informatica">Computer Engineering</string>
+    <string name="teleco">Telecommunications</string>
+    <string name="iim">Computer Engineering\nand Mathematics</string>
+    <string name="iiade">Computer Engineering and\nBusiness Administration</string>
+
+    <string name="docente">Teacher</string>
+    <string name="departamento">Department</string>
+    <string name="tutorias1">Tutoring\nfirst semester</string>
+    <string name="tutorias2">Tutoring\nsecond semester</string>
+
+
 
 
 </resources>

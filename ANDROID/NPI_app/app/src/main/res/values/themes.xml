@@ -2,4 +2,6 @@
 <resources>
 
     <style name="Theme.NPI_app" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert" />
 </resources>

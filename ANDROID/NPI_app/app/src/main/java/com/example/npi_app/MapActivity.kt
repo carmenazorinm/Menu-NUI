@@ -252,7 +252,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
                 if (location != null) {
                     val currentLatLng = LatLng(location.latitude, location.longitude)
                     if (!estaDentroDeLaFacultad(currentLatLng)) {
-                        Toast.makeText(this, "Vaya! Parece que no estás en la ETSIIT", Toast.LENGTH_SHORT).show()
+                        val mensaje_planta = findViewById<TextView>(R.id.mensaje_planta)
+                        mensaje_planta.text = "Vaya! Parece que no estás en la ETSIIT"
+                        mensaje_planta.visibility = View.VISIBLE
                     }
                 }
             }
@@ -281,16 +283,6 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
                 MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style)
             )
             if (!success) {
-<<<<<<< HEAD
-                Log.e("MapActivity", "Error al aplicar el estilo del mapa")
-            }
-        } catch (e: Resources.NotFoundException) {
-            Log.e("MapActivity", "Archivo de estilo no encontrado. Error: ", e)
-        }
-    }
-
-
-=======
                 Log.d("Map", "Error al aplicar el estilo del mapa")
             }
         } catch (e: Resources.NotFoundException) {
@@ -298,7 +290,6 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
         }
     }
 
->>>>>>> origin/main
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
