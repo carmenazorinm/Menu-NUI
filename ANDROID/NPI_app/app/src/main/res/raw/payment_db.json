@@ -1,0 +1,61 @@
+{
+  "*VG&.f&<@y_Vo_fR1cO|}{69r8){&QVf": {
+    "type": "payment",
+    "concept": "Comedor",
+    "date": "17/12/2024",
+    "token": "*VG&.f&<@y_Vo_fR1cO|}{69r8){&QVf",
+    "price": 3.50,
+    "user_id": "any",
+    "status": "AVAILABLE",
+    "payed_by": "none",
+    "multipay": true,
+    "voucher": true,
+    "access_token": "yH03&I-W@`Pl<0>!o'hAt6<6-4LFv>#x"
+  },
+  "N7;BWl~lXXU*b!~V`1L9e^l^TS]6mF*u": {
+    "type": "payment",
+    "concept": "Deportes",
+    "sport": "Pádel",
+    "place": "Cartuja",
+    "court": 4,
+    "date": "17/12/2024",
+    "start": "20:00",
+    "end": "21:30",
+    "token": "N7;BWl~lXXU*b!~V`1L9e^l^TS]6mF*u",
+    "price": 9.75,
+    "user_id": "any",
+    "status": "AVAILABLE",
+    "payed_by": "none",
+    "multipay": false,
+    "voucher": true,
+    "access_token": "W}s9_Up{[oTX$h@M1wAj'qT||.kl8\\Um"
+  },
+  "p;;Uu_`&sWqI'@bGi$.B:SS;KKN%3L^N": {
+    "type": "payment",
+    "concept": "Matrícula",
+    "degree": "Ingeniería Informática",
+    "course": "2024/2025",
+    "date": "17/12/2024",
+    "token": "p;;Uu_`&sWqI'@bGi$.B:SS;KKN%3L^N",
+    "price": 486.29,
+    "user_id": 0,
+    "status": "AVAILABLE",
+    "payed_by": "none",
+    "multipay": false,
+    "voucher": false
+  },
+  "<dslrlW/hAUrE|#GE;]3,Ov77>'./y*x": {
+    "type": "payment",
+    "concept": "Matrícula",
+    "degree": "Ingeniería Informática",
+    "course": "2024/2025",
+    "date": "17/12/2024",
+    "token": "<dslrlW/hAUrE|#GE;]3,Ov77>'./y*x",
+    "price": 486.29,
+    "user_id": 1,
+    "status": "AVAILABLE",
+    "payed_by": "none",
+    "multipay": false,
+    "voucher": false
+  }
+}

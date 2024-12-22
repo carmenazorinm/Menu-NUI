@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EntryActivity">
+
+    <!-- Indicador de Saldo -->
+    <TextView
+        android:id="@+id/tvSaldo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:text="SALDO: 0.00"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Indicador de Puntos -->
+    <TextView
+        android:id="@+id/tvPuntos"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:text="PUNTOS: 0"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSaldo" />
+
+    <!-- Botón 1: Escanear QR -->
+    <LinearLayout
+        android:id="@+id/btnScanQRContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRedeemPointsContainer"
+        app:layout_constraintTop_toBottomOf="@id/tvPuntos"
+
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <ImageButton
+            android:id="@+id/btnScanQR"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_scan_qr"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/scan_qr_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/scan_qr"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Botón 2: Canjear puntos -->
+    <LinearLayout
+        android:id="@+id/btnRedeemPointsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/btnScanQRContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPuntos">
+
+        <ImageButton
+            android:id="@+id/btnRedeemPoints"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_redeem"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/redeem_points_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/redeem"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Botón 3: Mis pagos realizados -->
+    <LinearLayout
+        android:id="@+id/btnPaymentsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBonusesContainer"
+        app:layout_constraintTop_toBottomOf="@+id/btnScanQRContainer"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <ImageButton
+            android:id="@+id/btnPayments"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_history"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/payments_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/history"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Botón 4: Bonos adquiridos -->
+    <LinearLayout
+        android:id="@+id/btnBonusesContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/btnPaymentsContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRedeemPointsContainer">
+
+        <ImageButton
+            android:id="@+id/btnBonuses"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_voucher"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/vouchers_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vouchers"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

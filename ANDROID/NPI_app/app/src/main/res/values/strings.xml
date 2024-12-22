@@ -25,4 +25,68 @@
     <string name="classroom_short_next_subject">&lt;b>Próxima asignatura:&lt;/b> %1$s (Grupo %2$s) a las %3$s</string>
     <string name="classroom_short_my_curr_subject">&lt;b>Tu clase actual:&lt;/b> %1$s (Grupo %2$s) en %3$s</string>
     <string name="classroom_short_my_next_subject">&lt;b>Tu próxima clase:&lt;/b> %1$s (Grupo %2$s) a las %3$s en %4$s</string>
+
+    <string name="title_activity_base" translatable="false">BaseActivity</string>
+    <string name="title_activity_wallet" translatable="false">WalletActivity</string>
+    <string name="title_activity_wallet_entry" translatable="false">WalletEntryActivity</string>
+    <string name="scan_qr_desc">Escanear QR de pago</string>
+    <string name="scan_qr">Escanear QR</string>
+    <string name="redeem_points_desc">Canjear puntos</string>
+    <string name="redeem">Canjear puntos</string>
+    <string name="payments_desc">Historial de pagos</string>
+    <string name="history">Mis pagos</string>
+    <string name="vouchers_desc">Mis bonos</string>
+    <string name="vouchers">Mis bonos</string>
+    <string name="title_activity_qrscanner" translatable="false">QRScannerActivity</string>
+    <string name="saldo_txt">SALDO: %.2f €</string>
+    <string name="puntos_txt">PUNTOS: %1$d</string>
+    <string name="title_activity_payment" translatable="false">PaymentActivity</string>
+    <string name="concept_label">Concepto: %1$s</string>
+    <string name="key_value_format" translatable="false">%1$s: %2$s</string>
+    <string name="price_label" translatable="false">Precio</string>
+    <string name="date_label">Fecha</string>
+    <string name="sport_label">Deporte</string>
+    <string name="place_label">Lugar</string>
+    <string name="court_label">Pista</string>
+    <string name="start_time_label">Hora de inicio</string>
+    <string name="end_time_label">Hora de fin</string>
+    <string name="degree_label">Grado</string>
+    <string name="course_label">Curso</string>
+    <string name="pay_button_text">PAGAR (%.2f €)</string>
+    <string name="alert_title_insufficient_balance">Sin saldo suficiente</string>
+    <string name="alert_message_insufficient_balance">No hay suficiente saldo en tu monedero virtual. Recarga tu monedero antes.</string>
+    <string name="ok_button">Aceptar</string>
+    <string name="alert_title_confirm_payment">Confirmar pago</string>
+    <string name="alert_message_confirm_payment">Se va a proceder a realizar el pago de %.2f €. ¿Quieres continuar?</string>
+    <string name="yes_button">Sí</string>
+    <string name="payment_successful_message">Se ha efectuado el pago.</string>
+    <string name="no_button">No</string>
+    <string name="title_activity_payment_confirmation">PaymentConfirmationActivity</string>
+    <string name="points_message">¡Has ganado %1$d puntos de fidelidad!</string>
+    <string name="item_cost">Puntos: %1$d</string>
+    <string name="title_activity_redeem_points">RedeemPointsActivity</string>
+    <string name="title_activity_redeem_details">RedeemDetailsActivity</string>
+    <string name="redeem_button_text">CANJEAR (%1$d)</string>
+    <string name="discount_redeemed">¡Se ha completado el canjeo! Consulta el descuento que has adquirido cuando vayas a pagar, utilizando el botón CANJEAR DESCUENTOS.</string>
+    <string name="product_redeemed">¡El pedido ha sido completado! Consulta tu e-mail para ver la información del pedido.</string>
+    <string name="redeem_completed">¡Canjeo completado!</string>
+    <string name="title_activity_redeem_confirmation" translatable="false">RedeemConfirmationActivity</string>
+    <string name="title_activity_apply_discounts" translatable="false">ApplyDiscountsActivity</string>
+    <string name="original_price">Precio Original: %.2f €</string>
+    <string name="discount_applied">Descuento aplicado: %.2f €</string>
+    <string name="final_price">Precio final: %.2f €</string>
+    <string name="confirm_redeem_message">Vas a proceder a gastar %1$d puntos de fidelidad en este producto. ¿Quieres continuar?</string>
+    <string name="confirm_redeem_title">Confirmar canjeo</string>
+    <string name="discount_price" translatable="false">%.2f €</string>
+    <string name="title_activity_my_payments" translatable="false">MyPaymentsActivity</string>
+    <string name="transaction_concept">Concepto: %1$s</string>
+    <string name="transaction_money">Pago con monedero virtual</string>
+    <string name="transaction_points">Canjeo de puntos</string>
+    <string name="transaction_method">Transacción: %1$s</string>
+    <string name="transaction_quantity_money">Cantidad: %.2f €</string>
+    <string name="transaction_quantity_points">Cantidad: %1$d puntos</string>
+    <string name="transaction_date">Fecha: %1$s</string>
+    <string name="title_activity_my_vouchers" translatable="false">MyVouchersActivity</string>
+    <string name="title_activity_voucher_details" translatable="false">VoucherDetailsActivity</string>
+    <string name="voucher_details_sports">Lugar: %1$s\nHora: %2$s - %3$s\nPista: %4$s</string>
 </resources>
