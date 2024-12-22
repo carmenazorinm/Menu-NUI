@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ajustes"
+            android:text="@string/ajustes"
             android:textColor="@android:color/white"
             android:textSize="26sp"
             android:textStyle="bold"/>
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Cambio de idioma"
+            android:text="@string/cambio_idioma"
             android:textColor="#C0C0C0"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -83,11 +83,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Inglés"
+                android:contentDescription="@string/ingles"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Inglés"
+                android:text="@string/ingles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -111,11 +111,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="alemán"
+                android:contentDescription="@string/aleman"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Alemán"
+                android:text="@string/aleman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -138,11 +138,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Boton Español"
+                android:contentDescription="@string/espanol"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Español"
+                android:text="@string/espanol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"

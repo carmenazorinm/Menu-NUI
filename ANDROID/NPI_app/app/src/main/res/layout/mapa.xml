@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <fragment
         android:id="@+id/map"
@@ -9,5 +10,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <!-- Botón para 'Cómo llegar' -->
+    <ImageButton
+        android:id="@+id/btn_ruta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_ruta"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:text="Cómo llegar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Mensaje de texto en la parte inferior -->
+    <TextView
+        android:id="@+id/mensaje_planta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#9B9B9B"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

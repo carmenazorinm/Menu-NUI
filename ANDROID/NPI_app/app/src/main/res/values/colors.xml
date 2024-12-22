@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="theme_color">#00E4DF</color>
+    <color name="money_transaction">#E3F2FD</color> <!-- Azul claro -->
+    <color name="points_transaction">#F1F8E9</color> <!-- Verde claro -->
+    <color name="primary_color">#6200EE</color> <!-- Un púrpura intenso como ejemplo -->
+    <color name="light_gray">#D3D3D3</color>   <!-- Un gris claro estándar -->
 </resources>

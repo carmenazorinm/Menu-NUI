@@ -2,12 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.NFC" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+
 
     <application
         android:allowBackup="true"
@@ -25,14 +30,19 @@
             android:value="AIzaSyAxXbZyS83Jvs54j05_mHIO3yStqPgtYQE" />
 
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+        </activity>
+
+        <activity
             android:name=".AulasActivity"
             android:exported="false"
             android:label="@string/title_activity_localizacion"
             android:theme="@style/Theme.NPI_app" />
-
+      
         <activity
             android:name=".AjustesActivity"
-            android:exported="true"/>
+            android:exported="true" />
 
         <activity
             android:name=".ChatBotActivity"
@@ -53,6 +63,18 @@
         <activity
             android:name=".ProfesoradoActivity"
             android:exported="true"/>
+        <activity
+            android:name=".InformaticaActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".TelecomunicacionesActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".DGIIMActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".DGIIADEActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".ServExtActivity"
@@ -64,6 +86,10 @@
 
         <activity
             android:name=".BaseActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ChatBot"
             android:exported="true"/>
 
         <activity
@@ -86,13 +112,84 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.NPI_app">
+            android:theme="@style/Theme.NPI_app" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".VoucherDetailsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_voucher_details"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".MyVouchersActivity"
+            android:exported="false"
+            android:label="@string/title_activity_my_vouchers"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".MyPaymentsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_my_payments"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".ApplyDiscountsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_apply_discounts"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".RedeemConfirmationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_redeem_confirmation"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".RedeemDetailsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_redeem_details"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".RedeemPointsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_redeem_points"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".PaymentConfirmationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_payment_confirmation"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_payment"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".QRScannerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_qrscanner"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".WalletEntryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_wallet_entry"
+            android:theme="@style/Theme.NPI_app" />
+
+        <activity
+            android:name=".WalletActivity"
+            android:exported="false"
+            android:label="@string/title_activity_wallet"
+            android:theme="@style/Theme.NPI_app" />
+
+    </application>
 </manifest>
