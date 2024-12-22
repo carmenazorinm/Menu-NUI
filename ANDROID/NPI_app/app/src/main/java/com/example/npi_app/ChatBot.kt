@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.Resources.Theme
 import android.os.Build
 import android.os.Bundle
 import android.speech.RecognitionListener
@@ -56,10 +57,13 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import com.example.npi_app.ui.theme.AzulChat
 import com.example.npi_app.ui.theme.ChatBotTheme
 import com.example.npi_app.ui.theme.MarronETSIIT
 import com.example.npi_app.ui.theme.MarronETSIITBanner
+import com.example.npi_app.ui.theme.RojoChat
 import com.example.npi_app.ui.theme.ThemeColor
+import com.example.npi_app.ui.theme.VerdeChat
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.content
 import kotlinx.coroutines.launch
@@ -185,14 +189,30 @@ class ChatViewModel : ViewModel() {
                     }.toList()
                 )
 
+                if (chat == null) {
+                    messageList.add(MessageModel("Error al iniciar el modelo generativo.", "model"))
+                    return@launch
+                }
+
                 messageList.add(MessageModel(question, "user"))
                 messageList.add(MessageModel("Pensando...","model"))
 
                 val response = chat.sendMessage("Estudio informática en la Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación de la Universidad de Granada. Tengo una pregunta con la universidad: " + question)
-                messageList.removeLast()
+                if (response == null) {
+                    messageList.add(MessageModel("Error al obtener una respuesta del modelo generativo.", "model"))
+                    Log.e("ChatViewModel", "Error al obtener una respuesta del modelo generativo.")
+                    return@launch
+                } else {
+                    Log.d("ChatViewModel", "Respuesta del modelo generativo: ${response.text}")
+                }
+                if (messageList.isNotEmpty()) {
+                    messageList.removeLast()
+                }
                 messageList.add(MessageModel(response.text.toString(), "model"))
             } catch (e : Exception) {
-                messageList.removeLast()
+                if (messageList.isNotEmpty()) {
+                    messageList.removeLast()
+                }
                 messageList.add(MessageModel("Lo siento, ha sucedido algún error. Comprueba tu conexión a internet.", "model"))
             }
         }
@@ -217,7 +237,7 @@ fun CharPage(modifier: Modifier = Modifier, viewModel: ChatViewModel, onMicClick
                 .align(Alignment.Center),
             painter = painterResource(id = R.drawable.logougr),
             contentDescription = "Logo",
-            tint = MarronETSIIT
+            tint = ThemeColor
         )
     }
 
@@ -267,7 +287,7 @@ fun MessageRow(messageModel: MessageModel) {
                         bottom = 8.dp
                     )
                     .clip(RoundedCornerShape(48f))
-                    .background(if (isModel) MarronETSIIT else ThemeColor)
+                    .background(if (isModel) ThemeColor else RojoChat)
                     .padding(16.dp)
             ) {
                 SelectionContainer {
@@ -325,7 +345,7 @@ fun AppHeader() {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .background(MarronETSIITBanner)
+            .background(ThemeColor)
     ) {
         Text(
             modifier = Modifier.padding(16.dp),
