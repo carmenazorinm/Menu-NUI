@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:divider="@android:color/darker_gray"
+    android:showDividers="middle">
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:padding="8dp"
+        android:gravity="start" />
+
+    <!-- Departamento -->
+    <TextView
+        android:id="@+id/departamento"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Departamento"
+        android:padding="8dp"
+        android:gravity="start" />
+
+    <!-- Teléfono -->
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:padding="8dp"
+        android:gravity="start" />
+
+    <!-- Correo -->
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Ver email"
+        android:padding="8dp"
+        android:gravity="start" />
+
+</LinearLayout>

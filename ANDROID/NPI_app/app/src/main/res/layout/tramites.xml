@@ -1,16 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tramites"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center" />
-</LinearLayout>
+    <!-- Barra de título fija -->
+    <LinearLayout
+        android:id="@+id/titulo_tramites"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00E4DF"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRAMITES"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Contenedor desplazable -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/titulo_tramites"
+        app:layout_constraintBottom_toTopOf="@id/down_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <GridLayout
+            android:id="@+id/menu_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:alignmentMode="alignMargins"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- INFORMÁTICA -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btn_informatica"
+                    android:src="@drawable/informatica"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="Consulta profesorado informática"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:text="Informática"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- TELECOMUNICACIONES -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp">
+
+                <ImageButton
+                    android:id="@+id/btn_teleco"
+                    android:src="@drawable/telecomunicaciones"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="Consulta profesorado telecomunicaciones"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:text="Telecomunicaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- DGIIM -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp">
+
+                <ImageButton
+                    android:id="@+id/btn_dgiim"
+                    android:src="@drawable/dgiim"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="Consulta profesorado DGIIM"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:text="Ingeniería Informática y Matemáticas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- DGIIADE -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp">
+
+                <ImageButton
+                    android:id="@+id/btn_dgiiade"
+                    android:src="@drawable/dgiiade"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="Consulta profesorado DGIIADE"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:text="Ingeniería Informática y ADE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+    <!-- Toolbar inferior fija -->
+    <include
+        android:id="@+id/down_toolbar"
+        layout="@layout/down_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

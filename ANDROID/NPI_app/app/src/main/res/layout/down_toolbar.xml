@@ -23,7 +23,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="?android:attr/selectableItemBackground"
-            android:contentDescription="Usuario"
+            android:contentDescription="Login"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_usuario"
             app:tint="@android:color/white"
