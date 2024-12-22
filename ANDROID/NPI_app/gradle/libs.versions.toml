@@ -13,6 +13,17 @@ constraintlayout = "2.2.0"
 generativeai = "0.9.0"
 material = "1.12.0"
 activity = "1.9.3"
+recyclerview = "1.3.2"
+cameraCore = "1.4.1"
+barcodeScanningCommon = "17.0.0"
+cameraLifecycle = "1.4.1"
+cameraView = "1.4.1"
+playServicesMlkitBarcodeScanning = "18.3.1"
+androidx_camera = "1.5.1"
+cameraX = "1.4.1"
+coreVersion = "3.5.2"
+visionCommon = "17.3.0"
+zxingAndroidEmbedded = "4.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,6 +45,20 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeai" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraX" }
+barcode-scanning-common = { group = "com.google.mlkit", name = "barcode-scanning-common", version.ref = "barcodeScanningCommon" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraLifecycle" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
+play-services-mlkit-barcode-scanning = { group = "com.google.android.gms", name = "play-services-mlkit-barcode-scanning", version.ref = "playServicesMlkitBarcodeScanning" }
+zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
+vision-common = { group = "com.google.mlkit", name = "vision-common", version.ref = "visionCommon" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "cameraX" }
+androidx-camera-video = { group = "androidx.camera", name = "camera-video", version.ref = "cameraX" }
+androidx-camera-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "cameraX" }
+core-v352 = { module = "com.google.zxing:core", version.ref = "coreVersion" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -52,18 +52,18 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Docencia"
+                android:contentDescription="@string/docencia"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Docencia"
+                android:text="@string/docencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="8dp" />
         </LinearLayout>
 
-        <!-- AULAS -->
+        <!-- LOCALIZACION -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,11 +79,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Aulas"
+                android:contentDescription="@string/localizacion"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Aulas"
+                android:text="@string/localizacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -109,33 +109,33 @@
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Trámites"
+                android:text="@string/tramites"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="8dp" />
         </LinearLayout>
 
-        <!-- SERVICIOS EXTERNOS -->
+        <!-- PAGOS -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_gravity="center">
 
             <ImageButton
-                android:id="@+id/btn_servicios_externos"
-                android:src="@drawable/ic_servicios_externos"
+                android:id="@+id/btn_pagos"
+                android:src="@drawable/ic_dinero"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Servicios Externos"
+                android:contentDescription="@string/pagos"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Servicios\nExternos"
+                android:text="@string/pagos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -157,11 +157,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Comedor"
+                android:contentDescription="@string/comedor"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Comedor"
+                android:text="@string/comedor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -183,37 +183,37 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Profesorado"
+                android:contentDescription="@string/profesorado"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Profesorado"
+                android:text="@string/profesorado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="8dp" />
         </LinearLayout>
 
-        <!-- ESPACIOS COMUNES -->
+        <!-- SERVICIOS EXTERNOS -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="16dp"
             android:layout_gravity="center">
 
             <ImageButton
-                android:id="@+id/btn_espacios_comunes"
-                android:src="@drawable/ic_espacios_comunes"
+                android:id="@+id/btn_servicios_externos"
+                android:src="@drawable/ic_servicios_externos"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Espacios Comunes"
+                android:contentDescription="@string/servicios_ext"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Espacios\nComunes"
+                android:text="@string/servicios_ext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -235,11 +235,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="OyeETSIIT"
+                android:contentDescription="@string/chatbot"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="OyeETSIIT"
+                android:text="@string/chatbot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"

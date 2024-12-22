@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         val servextButton: ImageButton = findViewById(R.id.btn_servicios_externos)
         val comedorButton: ImageButton = findViewById(R.id.btn_comedor)
         val profesoradoButton: ImageButton = findViewById(R.id.btn_profesorado)
-        val espcomButton: ImageButton = findViewById(R.id.btn_espacios_comunes)
+        val pagosButton: ImageButton = findViewById(R.id.btn_pagos)
         val chatbotButton: ImageButton = findViewById(R.id.btn_chatbot)
 
         // Establecemos el listener para el clic del botón
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         aulasButton.setOnClickListener {
             // Crear un Intent para iniciar la actividad AulasActivity
-            val intent = Intent(this@MainActivity, AulasActivity::class.java)
+            val intent = Intent(this@MainActivity, MapActivity::class.java)
             startActivity(intent)
         }
 
@@ -81,9 +81,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        espcomButton.setOnClickListener {
+        pagosButton.setOnClickListener {
             // Crear un Intent para iniciar la actividad EspComActivity
-            val intent = Intent(this@MainActivity, EspComActivity::class.java)
+            val intent = Intent(this@MainActivity, WalletEntryActivity::class.java)
             startActivity(intent)
         }
 
@@ -191,15 +191,18 @@ class MainActivity : AppCompatActivity() {
 
     private val menuActivities = mapOf(
         "docencia" to DocenciaActivity::class.java,
-        "aulas" to AulasActivity::class.java,
+        "localización" to MapActivity::class.java,
         "trámites" to TramitesActivity::class.java,
         "servicios externos" to ServExtActivity::class.java,
         "comedor" to ComedorActivity::class.java,
         "profesorado" to ProfesoradoActivity::class.java,
-        "espacios comunes" to EspComActivity::class.java,
-        "oye etsit" to ChatBotActivity::class.java, // Opción para el chatbot
-        "oye etsi" to ChatBotActivity::class.java, // Opción para el chatbot
-        "oye etsy" to ChatBotActivity::class.java, // Opción para el chatbot
+        "mis pagos" to WalletEntryActivity::class.java,
+        "oye etsit" to ChatBot::class.java, // Opción para el chatbot
+        "oye etsi" to ChatBot::class.java, // Opción para el chatbot
+        "oye etsy" to ChatBot::class.java, // Opción para el chatbot
+        "oye etsyt" to ChatBot::class.java, // Opción para el chatbot
+        "oye epsy" to ChatBot::class.java, // Opción para el chatbot
+        "oye epsyt" to ChatBot::class.java, // Opción para el chatbot
         "ajustes" to AjustesActivity::class.java
     )
 

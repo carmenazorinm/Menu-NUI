@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Tick verde -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check_green"
+        android:contentDescription="Canje completado"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Mensaje -->
+    <TextView
+        android:id="@+id/tvRedeemMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Canje completado!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botón de salir -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white" />
+</LinearLayout>

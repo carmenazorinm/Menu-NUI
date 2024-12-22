@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UGR NPI</string>
+    <string name="menu_item_1">Classroom check</string>
+    <string name="language">Language</string>
+    <string name="title_activity_nfcactivity">Classroom check</string>
+    <string name="please_scan">Please scan the classroom device</string>
+    <string name="classroom_info_room">You are in the room &lt;b>%1$s&lt;/b>.</string>
+    <string name="classroom_info_curr_subject">Right now in this classroom, the class of &lt;b>%1$s&lt;/b>, from the group &lt;b>%2$s&lt;/b>, is taking place.</string>
+    <string name="classroom_info_next_subject">Next class is &lt;b>%1$s&lt;/b>, group &lt;b>%2$s&lt;/b>, starting at &lt;b>%3$s&lt;/b>.</string>
+    <string name="classroom_info_this_room_yes">You have class in this room right now.</string>
+    <string name="classroom_info_this_room_no">You don\'t have class in this room right now.</string>
+    <string name="classroom_info_my_curr_subject">At this moment you have class in room &lt;b>%1$s&lt;/b>, of &lt;b>%2$s&lt;/b>.</string>
+    <string name="classroom_info_my_curr_subject_no">You don\'t have any classes at this moment.</string>
+    <string name="classroom_info_my_next_subject">Next you have class of &lt;b>%1$s&lt;/b> in room &lt;b>%2$s&lt;/b> at &lt;b>%3$s&lt;/b>.</string>
+    <string name="classroom_info_my_next_subject_no">You don\'t have any more classes today.</string>
+    <string name="classroom_info_curr_no_subject">Currently there isn\'t any class in this room.</string>
+    <string name="classroom_info_next_no_subject">There aren\'t any more classes today in this room.</string>
+    <string name="classroom_short_room">&lt;b>Room: %1$s&lt;/b></string>
+    <string name="classroom_short_curr_subject">&lt;b>Current subject:&lt;/b> %1$s (Group %2$s)</string>
+    <string name="classroom_short_next_subject">&lt;b>Next subject:&lt;/b> %1$s (Group %2$s) at %3$s</string>
+    <string name="classroom_short_my_curr_subject">&lt;b>Your current class::&lt;/b> %1$s (Group %2$s) in %3$s</string>
+    <string name="classroom_short_my_next_subject">&lt;b>Your next class:&lt;/b> %1$s (Group %2$s) at %3$s in %4$s</string>
+    <string name="scan_qr_desc">Payment QR Scan</string>
+    <string name="scan_qr">QR Scan</string>
+    <string name="redeem_points_desc">Redeem points</string>
+    <string name="redeem">Redeem points</string>
+    <string name="payments_desc">Payment histoy</string>
+    <string name="history">Payment\nHistory</string>
+    <string name="vouchers_desc">My vouchers</string>
+    <string name="vouchers">My vouchers</string>
+    <string name="saldo_txt">CREDIT: %.2f €</string>
+    <string name="puntos_txt">POINTS: %1$d</string>
+    <string name="concept_label">Concept: %1$s</string>
+    <string name="price_label">Price</string>
+    <string name="date_label">Date</string>
+    <string name="sport_label">Sport</string>
+    <string name="place_label">Place</string>
+    <string name="court_label">Court</string>
+    <string name="start_time_label">Start time</string>
+    <string name="end_time_label">End time</string>
+    <string name="degree_label">Degree</string>
+    <string name="course_label">Course</string>
+    <string name="pay_button_text">PAY (%.2f €)</string>
+    <string name="alert_title_insufficient_balance">Not enough credit</string>
+    <string name="alert_message_insufficient_balance">There is not enough credit in your virtual waller. Please recharge it.</string>
+    <string name="ok_button">Accept</string>
+    <string name="alert_title_confirm_payment">Confirm payment</string>
+    <string name="alert_message_confirm_payment">The payment of %.2f € will be processed. Do you want to continue?</string>
+    <string name="yes_button">Yes</string>
+    <string name="payment_successful_message">Payment successful.</string>
+    <string name="no_button">No</string>
+    <string name="points_message">You won %1$d fidelity points!</string>
+    <string name="item_cost">Points: %1$d</string>
+    <string name="redeem_button_text">REDEEM (%1$d)</string>
+    <string name="discount_redeemed">The redemption has been completed! Check the discount you have acquired when you go to pay, using the REDEEM DISCOUNTS button.</string>
+    <string name="product_redeemed">The order has been completed! Check your email for the order information.</string>
+    <string name="redeem_completed">Redemption completed!</string>
+    <string name="original_price">Original Price: %.2f €</string>
+    <string name="discount_applied">Applied discount: %.2f €</string>
+    <string name="final_price">Final price: %.2f €</string>
+    <string name="confirm_redeem_message">You are about to spend %1$d loyalty points on this product. Do you want to continue?</string>
+    <string name="confirm_redeem_title">Confirm redemption</string>
+    <string name="transaction_concept">Concept: %1$s</string>
+    <string name="transaction_money">Payment with virtual wallet</string>
+    <string name="transaction_points">Point redemption</string>
+    <string name="transaction_method">Transaction: %1$s</string>
+    <string name="transaction_quantity_money">Quantity: %.2f €</string>
+    <string name="transaction_quantity_points">Quantity: %1$d</string>
+    <string name="transaction_date">Date: %1$s</string>
+    <string name="voucher_details_sports">Place: %1$s\nTime: %2$s - %3$s\nCourt: %4$s</string>
+
+    <string name="menu">Main Menu</string>
+    <string name="docencia">Teaching</string>
+    <string name="localizacion">Location</string>
+    <string name="tramites">Procedures</string>
+    <string name="pagos">My Payments</string>
+    <string name="comedor">Canteen</string>
+    <string name="profesorado">Faculty</string>
+    <string name="servicios_ext">External\nServices</string>
+    <string name="espacios_com">Common\nSpaces</string>
+    <string name="chatbot">HeyETSIIT</string>
+
+    <string name="ajustes">Settings</string>
+    <string name="cambio_idioma">Change Language</string>
+    <string name="ingles">English</string>
+    <string name="espanol">Spanish</string>
+    <string name="aleman">German</string>
+
+    <string name="horario">Timetable\nLookup</string>
+    <string name="c_acad">Academic\nCalendar</string>
+    <string name="c_exam">Exam\nCalendar</string>
+
+
+</resources>
