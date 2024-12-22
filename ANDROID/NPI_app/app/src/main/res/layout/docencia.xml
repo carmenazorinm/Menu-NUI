@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Docencia"
+            android:text="@string/docencia"
             android:textColor="@android:color/white"
             android:textSize="26sp"
             android:textStyle="bold"/>
@@ -62,11 +62,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Consulta de Horarios"
+                android:contentDescription="@string/horario"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Consulta de Horarios"
+                android:text="@string/horario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -90,11 +90,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Calendario Académico"
+                android:contentDescription="@string/c_acad"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Calendario Académico"
+                android:text="@string/c_acad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -117,11 +117,11 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Boton Exámenes"
+                android:contentDescription="@string/c_exam"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Calendario de Exámenes"
+                android:text="@string/c_exam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
