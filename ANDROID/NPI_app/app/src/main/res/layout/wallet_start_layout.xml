@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".EntryActivity">
 
     <!-- Indicador de Saldo -->
@@ -154,5 +153,15 @@
             android:textAlignment="center"
             android:textSize="16sp" />
     </LinearLayout>
+
+    <!-- Reutilización de la Toolbar inferior -->
+    <include
+        android:id="@+id/down_toolbar"
+        layout="@layout/down_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
