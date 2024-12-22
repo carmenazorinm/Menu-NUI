@@ -66,7 +66,7 @@ import kotlinx.coroutines.launch
 import java.util.Locale
 
 
-class ChatBot : ComponentActivity() {
+class ChatBot : BaseActivity() {
     private lateinit var speechRecognizer: SpeechRecognizer
     private lateinit var textToSpeech: TextToSpeech
     private val isListening = mutableStateOf(false)

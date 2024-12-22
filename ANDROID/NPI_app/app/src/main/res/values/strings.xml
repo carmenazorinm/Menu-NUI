@@ -32,9 +32,9 @@
     <string name="scan_qr_desc">Escanear QR de pago</string>
     <string name="scan_qr">Escanear QR</string>
     <string name="redeem_points_desc">Canjear puntos</string>
-    <string name="redeem">Canjear puntos</string>
+    <string name="redeem">Canjear\npuntos</string>
     <string name="payments_desc">Historial de pagos</string>
-    <string name="history">Mis pagos</string>
+    <string name="history">Historial\nde pagos</string>
     <string name="vouchers_desc">Mis bonos</string>
     <string name="vouchers">Mis bonos</string>
     <string name="title_activity_qrscanner" translatable="false">QRScannerActivity</string>

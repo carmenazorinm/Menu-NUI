@@ -191,16 +191,18 @@ class MainActivity : AppCompatActivity() {
 
     private val menuActivities = mapOf(
         "docencia" to DocenciaActivity::class.java,
-        "localizacion" to MapActivity::class.java,
+        "localización" to MapActivity::class.java,
         "trámites" to TramitesActivity::class.java,
         "servicios externos" to ServExtActivity::class.java,
         "comedor" to ComedorActivity::class.java,
         "profesorado" to ProfesoradoActivity::class.java,
         "mis pagos" to WalletEntryActivity::class.java,
-        "oye etsit" to ChatBotActivity::class.java, // Opción para el chatbot
-        "oye etsi" to ChatBotActivity::class.java, // Opción para el chatbot
-        "oye etsy" to ChatBotActivity::class.java, // Opción para el chatbot
-        "oye etsyt" to ChatBotActivity::class.java, // Opción para el chatbot
+        "oye etsit" to ChatBot::class.java, // Opción para el chatbot
+        "oye etsi" to ChatBot::class.java, // Opción para el chatbot
+        "oye etsy" to ChatBot::class.java, // Opción para el chatbot
+        "oye etsyt" to ChatBot::class.java, // Opción para el chatbot
+        "oye epsy" to ChatBot::class.java, // Opción para el chatbot
+        "oye epsyt" to ChatBot::class.java, // Opción para el chatbot
         "ajustes" to AjustesActivity::class.java
     )
 

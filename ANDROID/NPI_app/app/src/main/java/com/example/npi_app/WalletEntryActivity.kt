@@ -3,6 +3,7 @@ package com.example.npi_app
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.GridLayout
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.ComponentActivity
@@ -24,6 +25,12 @@ class WalletEntryActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.wallet_start_layout)
         WalletManager.loadPaymentDb(this)
+
+        // Obtén la referencia a la toolbar inferior desde el archivo XML
+        val downToolBar: GridLayout = findViewById(R.id.down_toolbar)
+
+        // Crea una instancia de ToolbarInferior para gestionar el comportamiento del toolbar
+        DownToolBar(this, downToolBar)
 
         // Configurar listeners para cada botón si es necesario
         findViewById<ImageButton>(R.id.btnScanQR).setOnClickListener {
