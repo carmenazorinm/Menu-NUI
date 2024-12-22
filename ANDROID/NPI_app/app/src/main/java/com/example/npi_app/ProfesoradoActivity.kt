@@ -19,6 +19,8 @@ class ProfesoradoActivity : BaseActivity() {
 
         // Lista de ejemplo
         val profesores = listOf(
+            Profesor("Marcelino José Cabrera Cuevas", "Departamento de Lenguajes y Sistemas Informáticos", "Miércoles\t11:00 - 14:00\tD2F (Traducción e Interpretación)\nJueves\t9:00 - 10:30\tD25\n" +
+                    "Jueves\t12:30 - 14:00\tD25", "Lunes\t10:30 - 13:30\tD25\nMartes\t10:30 - 13:30\tD25"),
             Profesor("Francisco Javier Abad Ortega", "Profesor Contratado Doctor Indefinido", "Miércoles\t9:30 - 13:30\tD68-4P\nMiércoles\t18:30 - 20:30\tD68-4P", "Jueves\t9:30 - 12:30\tD20"),
             Profesor("Silvia Acid Carrillo", "Profesora Titular de Universidad", "Lunes\t10:00 - 12:00\tD32\nJueves\t15:00 - 17:00\tD32", "Miércoles\t11:00 - 13:00\tD22"),
             Profesor("Eugenio Aguirre Molina", "Profesor Titular de Universidad", "Martes\t9:30 - 11:30\tD45", "Viernes\t16:00 - 18:00\tD20"),
