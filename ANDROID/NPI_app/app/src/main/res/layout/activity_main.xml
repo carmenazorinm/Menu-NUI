@@ -116,26 +116,26 @@
                 android:layout_marginTop="8dp" />
         </LinearLayout>
 
-        <!-- SERVICIOS EXTERNOS -->
+        <!-- PAGOS -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_gravity="center">
 
             <ImageButton
-                android:id="@+id/btn_servicios_externos"
-                android:src="@drawable/ic_servicios_externos"
+                android:id="@+id/btn_pagos"
+                android:src="@drawable/ic_dinero"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Servicios Externos"
+                android:contentDescription="Mis Pagos"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Servicios\nExternos"
+                android:text="Mis Pagos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -194,26 +194,26 @@
                 android:layout_marginTop="8dp" />
         </LinearLayout>
 
-        <!-- ESPACIOS COMUNES -->
+        <!-- SERVICIOS EXTERNOS -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="16dp"
             android:layout_gravity="center">
 
             <ImageButton
-                android:id="@+id/btn_espacios_comunes"
-                android:src="@drawable/ic_espacios_comunes"
+                android:id="@+id/btn_servicios_externos"
+                android:src="@drawable/ic_servicios_externos"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="?android:selectableItemBackground"
-                android:contentDescription="Espacios Comunes"
+                android:contentDescription="Servicios Externos"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:text="Espacios\nComunes"
+                android:text="Servicios\nExternos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
