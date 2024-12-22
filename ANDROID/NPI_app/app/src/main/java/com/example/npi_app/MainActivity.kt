@@ -1,5 +1,6 @@
 package com.example.npi_app
 
+import android.app.LocaleManager
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.util.Log
 import android.widget.GridLayout
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -38,7 +40,7 @@ class MainActivity : BaseActivity() {
         val docenciaButton: ImageButton = findViewById(R.id.btn_docencia)
         val aulasButton: ImageButton = findViewById(R.id.btn_aulas)
         val tramitesButton: ImageButton = findViewById(R.id.btn_tramites)
-        val servextButton: ImageButton = findViewById(R.id.btn_servicios_externos)
+        val espcomButton: ImageButton = findViewById(R.id.btn_espacios_comunes)
         val comedorButton: ImageButton = findViewById(R.id.btn_comedor)
         val profesoradoButton: ImageButton = findViewById(R.id.btn_profesorado)
         val pagosButton: ImageButton = findViewById(R.id.btn_pagos)
@@ -63,9 +65,9 @@ class MainActivity : BaseActivity() {
             startActivity(intent)
         }
 
-        servextButton.setOnClickListener {
+        espcomButton.setOnClickListener {
             // Crear un Intent para iniciar la actividad ServExtActivity
-            val intent = Intent(this@MainActivity, ServExtActivity::class.java)
+            val intent = Intent(this@MainActivity, EspComActivity::class.java)
             startActivity(intent)
         }
 
@@ -203,7 +205,7 @@ class MainActivity : BaseActivity() {
         "oye etsyt" to ChatBot::class.java, // Opción para el chatbot
         "oye epsy" to ChatBot::class.java, // Opción para el chatbot
         "oye epsyt" to ChatBot::class.java, // Opción para el chatbot
-        "ajustes" to AjustesActivity::class.java
+        //"ajustes" to AjustesActivity::class.java
     )
 
     private fun handleVoiceCommand(command: String) {
@@ -233,5 +235,6 @@ class MainActivity : BaseActivity() {
             .create()
         dialog.show()
     }
+
 
 }

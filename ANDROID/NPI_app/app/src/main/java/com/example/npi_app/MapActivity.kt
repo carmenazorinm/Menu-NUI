@@ -252,7 +252,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback {
                 if (location != null) {
                     val currentLatLng = LatLng(location.latitude, location.longitude)
                     if (!estaDentroDeLaFacultad(currentLatLng)) {
-                        Toast.makeText(this, "Vaya! Parece que no estás en la ETSIIT", Toast.LENGTH_SHORT).show()
+                        val mensaje_planta = findViewById<TextView>(R.id.mensaje_planta)
+                        mensaje_planta.text = "Vaya! Parece que no estás en la ETSIIT"
+                        mensaje_planta.visibility = View.VISIBLE
                     }
                 }
             }

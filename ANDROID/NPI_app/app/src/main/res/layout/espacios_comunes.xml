@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Espacios Comunes"
+            android:text="@string/espacios_com"
             android:textColor="@android:color/white"
             android:textSize="26sp"
             android:textStyle="bold"/>
