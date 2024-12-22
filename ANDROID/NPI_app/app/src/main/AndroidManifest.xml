@@ -52,6 +52,18 @@
         <activity
             android:name=".ProfesoradoActivity"
             android:exported="true"/>
+        <activity
+            android:name=".InformaticaActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".TelecomunicacionesActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".DGIIMActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".DGIIADEActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".ServExtActivity"
